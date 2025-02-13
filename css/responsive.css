@@ -176,6 +176,11 @@
         height: unset;
     }
 
+    #nlen--preheader-badge {
+        >p:last-of-type {
+            margin-left: 1em;
+        }
+    }
 
     .nlen--halfs-container.nlen--halfs-rtl>div,
     .nlen--halfs-container.nlen--halfs-ltr>div {
