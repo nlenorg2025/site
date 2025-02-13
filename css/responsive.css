@@ -300,4 +300,54 @@
             }
         }
     }
+
+    /**/
+
+    #nlen--programs-list-container {
+        margin-top: 1rem;
+    }
+
+    .nlen--program-card {
+        width: unset;
+        
+        main {
+            flex-direction: column;
+
+            .nlen--program-card-picture {
+                width: 100%;
+            }
+
+            .nlen--program-card-description {
+                width: 100%;
+            }
+        }
+    }
+
+    #nlen--programs-sweet-beginnings-cta {
+        height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 5rem;
+
+        > .nlen--container {
+            > div {
+                min-width: unset;
+                max-width: unset;
+                width: 100%;
+            }
+
+            > picture {
+                min-width: unset;
+                max-width: unset;
+                width: 100%;
+                height: auto;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
