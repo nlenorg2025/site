@@ -1448,6 +1448,7 @@ Preheader
 
 #nlen--preheader-nav-shop:hover {
     background-color: #272018;
+    border-color: transparent;
 
     span {
         color: #fff000;
