@@ -749,7 +749,7 @@
                             var availableOptions = userInterestSelect.querySelectorAll('option');
                             if (selectedRole === 'employer') {
                                 for (i = 0; i < availableOptions.length; i++) {
-                                    if(availableOptions[i].value !== 'potential-candidates'){
+                                    if (availableOptions[i].value !== 'potential-candidates') {
                                         availableOptions[i].disabled = true;
                                     } else {
                                         availableOptions[i].disabled = false;
@@ -758,7 +758,7 @@
                                 }
                             } else {
                                 for (i = 0; i < availableOptions.length; i++) {
-                                    if(availableOptions[i].value === 'potential-candidates'){
+                                    if (availableOptions[i].value === 'potential-candidates') {
                                         availableOptions[i].disabled = true;
                                     } else {
                                         availableOptions[i].disabled = false;
@@ -776,40 +776,40 @@
                             var destinationURL = false;
                             var selectedRole = userRoleSelect.options[userRoleSelect.selectedIndex].value;
                             var selectedInterest = userInterestSelect.options[userInterestSelect.selectedIndex].value;
-                            if(selectedRole === 'returning-citizen') {
-                                switch(selectedInterest) {
-                                    case 'training' : destinationURL = 'https://www.nlen.org/u-turn'; break;
-                                    case 'financial-education' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'utility-assistance' : destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security' : destinationURL = 'https://www.nlen.org/foc'; break;
+                            if (selectedRole === 'returning-citizen') {
+                                switch (selectedInterest) {
+                                    case 'training': destinationURL = 'https://www.nlen.org/u-turn'; break;
+                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
+                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
                                     default: break;
                                 }
                             }
-                            if(selectedRole === 'young-adult') {
-                                switch(selectedInterest) {
-                                    case 'training' : destinationURL = 'https://www.nlen.org/craft-your-path'; break;
-                                    case 'financial-education' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'utility-assistance' : destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security' : destinationURL = 'https://www.nlen.org/foc'; break;
+                            if (selectedRole === 'young-adult') {
+                                switch (selectedInterest) {
+                                    case 'training': destinationURL = 'https://www.nlen.org/craft-your-path'; break;
+                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
+                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
                                     default: break;
-                                }                                
+                                }
                             }
-                            if(selectedRole === 'job-seeker') {
-                                switch(selectedInterest) {
-                                    case 'training' : destinationURL = './programs-overview.html'; break;
-                                    case 'financial-education' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support' : destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'utility-assistance' : destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security' : destinationURL = 'https://www.nlen.org/foc'; break;
+                            if (selectedRole === 'job-seeker') {
+                                switch (selectedInterest) {
+                                    case 'training': destinationURL = './programs-overview.html'; break;
+                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
+                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
                                     default: break;
-                                }                                
+                                }
                             }
-                            if(selectedRole === 'employer') {
+                            if (selectedRole === 'employer') {
                                 destinationURL = 'https://www.nlen.org/partnerships';
                             }
-                            if(destinationURL !== false) {
+                            if (destinationURL !== false) {
                                 window.location.href = destinationURL;
                             }
                         });
@@ -891,7 +891,8 @@
             </header>
             <main>
                 <p>
-                    The North&nbsp;Lawndale Employment Network’s mission is to improve the earnings potential of the North
+                    The North&nbsp;Lawndale Employment Network’s mission is to improve the earnings potential of the
+                    North
                     Lawndale community through innovative employment initiatives that lead to economic advancement and
                     an improved quality of life.
                 </p>
@@ -1054,7 +1055,8 @@
                 <h1><strong>Improving lives through</strong>training and employment opportunities</h1>
                 <!-- support text -->
                 <p>Given the high rate of poverty resulting from racial and economic wealth disparities, we serve the
-                    unemployed and asset-limited, income-constrained employed populations in North&nbsp;Lawndale. We help
+                    unemployed and asset-limited, income-constrained employed populations in North&nbsp;Lawndale. We
+                    help
                     them to secure employment within one year.</p>
                 <!-- toolbar -->
                 <p>
@@ -1233,11 +1235,87 @@
                     <h1>Thank you to our generous sponsors.</h1>
                 </header>
                 <main>
-                    <picture>
-                        <img src="./img/nlen--home-sponsors.webp"
-                            style="display: block;object-fit: contain;width: 100%;">
-                    </picture>
+                    <div id="nlen--sponsors-carousel" class="splide" aria-label="NLEN Sponsors">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-1.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-2.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-3.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-4.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-5.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-6.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-7.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-8.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-9.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-10.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-11.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-12.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-13.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-14.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-15.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-16.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-17.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-18.webp" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </main>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        new Splide('#nlen--sponsors-carousel',
+                            {
+                                type: 'loop',
+                                autoplay: true,
+                                interval: 2500,
+                                perPage: 5,
+                                perMove: 1,
+                                arrows: false,
+                                pagination: false,
+                                breakpoints: {
+                                    640: {
+                                        perPage: 2,
+                                    },
+                                },
+                            }
+                        ).mount();
+                    });
+                </script>
             </div>
         </div>
         <!-- keep in touch -->
