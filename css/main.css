@@ -3016,3 +3016,306 @@ Alumni sucess
     }
 
 }
+
+/* DONATIONS PAGE */
+
+#nlen--donations-cta {
+    background: #FF4B00;
+    padding: var(--container-padding-desktop, 4rem) 0 var(--container-padding-desktop, 2rem) 0;
+
+    >.nlen--container {
+        width: 48rem;
+        display: flex;
+        max-width: var(--container-max-width-desktop, 80rem);
+        padding: 0rem var(--container-padding-desktop, 2rem);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-4xl, 2rem);
+        align-self: stretch;
+
+        .eyebrow {
+            color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+            text-align: center;
+
+            /* Text md/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+            color: #FFD19A;
+        }
+
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: 2.9375rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 3rem;
+            /* 102.128% */
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+
+            /* Display xs/Medium */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-xs, 1.5rem);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--Line-height-display-xs, 2rem);
+            /* 133.333% */
+        }
+
+    }
+
+}
+
+#nlen--classy-donation-form {
+    display: flex;
+    height: 43.3125rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+
+    .nlen--container {
+        width: 76rem;
+        flex-direction: row;
+    }
+}
+
+#nlen--classy-donation-form-copy {
+    display: flex;
+    min-width: var(--width-sm, 30rem);
+    max-width: var(--paragraph-max-width, 45rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-3xl, 1.5rem);
+    width: 35rem;
+}
+
+#nlen--classy-donation-form-copy h1 {
+    color: var(--colors-text-text-brand-tertiary-600, #F34B05);
+
+    /* Display md/Semibold */
+    font-family: var(--Font-family-font-family-display, Onest);
+    font-size: var(--Font-size-display-md, 2.25rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-display-md, 2.75rem);
+    /* 122.222% */
+    letter-spacing: -0.045rem;
+}
+
+#nlen--classy-donation-form-copy p {
+    color: var(--colors-text-text-tertiary-600, #535862);
+
+    /* Text lg/Regular */
+    font-family: var(--Font-family-font-family-body, Onest);
+    font-size: var(--Font-size-text-lg, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-lg, 1.75rem);
+    /* 155.556% */
+}
+
+#nlen--classy-donation-form-classy {
+    display: flex;
+    width: 30rem;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    >div {
+        width: 30rem;
+        height: 36.6875rem;
+    }
+
+}
+
+.nlen--returns-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: var(--spacing-lg, 0.75rem);
+}
+
+.nlen--returns-list li {
+    color: var(--colors-text-text-tertiary-600, #535862);
+
+    /* Text lg/Regular */
+    font-family: var(--Font-family-font-family-body, Onest);
+    font-size: var(--Font-size-text-lg, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-lg, 1.75rem);
+    /* 155.556% */
+    position: relative;
+}
+
+.nlen--returns-list li::before {
+    position: absolute;
+    top: 0;
+    left: -2.75rem;
+    content: '';
+    width: 1.75rem;
+    height: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-full, 624.9375rem);
+    background-image: url(./svgs/icon-check-circle.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nlen--other-ways-to-give-cta {
+    display: flex;
+    height: 14.625rem;
+    padding: var(--spacing-5xl, 2.5rem) 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-7xl, 4rem);
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: #FF4040;
+
+    .nlen--container {
+        display: flex;
+        max-width: var(--container-max-width-desktop, 80rem);
+        padding: 0rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xl, 1rem);
+        align-self: stretch;
+
+        h1 {
+            width: 30.4375rem;
+            color: var(--Colors-Text-text-primary_on-brand, #FFF);
+            text-align: center;
+            /* Display lg/Medium */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-lg, 3rem);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--Line-height-display-lg, 3.75rem);
+            /* 125% */
+            letter-spacing: -0.06rem;
+        }
+    }
+
+}
+
+.nlen--icon-heart-in-hand {
+    display: block;
+    width: 4.75rem;
+    height: 4.75rem;
+    background-image: url(./svgs/heart-on-hand.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nlen--other-ways-to-give {
+    background-color: #FFEFD6;
+    padding-bottom: var(--spacing-8xl, 5rem);
+
+}
+
+ul.other-ways-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3.25rem;
+    padding: var(--spacing-8xl, 5rem) 0rem;
+
+    >li {
+
+        width: 35.3rem;
+
+        figure {
+            width: 35.3rem;
+            display: flex;
+            flex-direction: row;
+            display: flex;
+            padding: var(--spacing-3xl, 1.5rem);
+            justify-content: center;
+            align-items: flex-start;
+            gap: var(--spacing-xl, 1rem);
+            flex: 1 0 0;
+            align-self: stretch;
+            border-radius: var(--spacing-lg, 0.75rem) var(--spacing-lg, 0.75rem) var(--spacing-none, 0rem) var(--spacing-none, 0rem);
+            border: 1px solid var(--Colors-Border-border-secondary, #E9EAEB);
+            background: var(--Colors-Foreground-fg-white, #FFF);
+        }
+
+        figure>div {
+            display: flex;
+            width: 12.5rem;
+            height: 12.5rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background: #FFF7ED;
+            padding: 1.1rem;
+
+            >img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        figure>figcaption {
+            width: 20.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .title {
+            color: var(--Colors-Text-text-brand-tertiary_alt, #F34B05);
+
+            /* Display xs/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-xs, 1.5rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-xs, 2rem);
+            /* 133.333% */
+        }
+
+        .description {
+            color: var(--colors-text-text-tertiary-600, #535862);
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+
+            a {
+                color: var(--colors-text-text-tertiary-600, #535862);
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

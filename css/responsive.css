@@ -1,6 +1,11 @@
 @media only screen and (max-width: 649px),
 (orientation: portrait) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     body,
     body>header,
     body>footer,
@@ -24,7 +29,7 @@
         height: 3.25rem;
         overflow: hidden;
 
-        > div {
+        >div {
             max-width: unset;
             align-items: flex-start;
             flex-direction: row;
@@ -40,7 +45,7 @@
     #nlen--preheader-search-dropdown-container {
         display: none;
     }
-    
+
     .nlen--preheader-nav-button>span::before {
         width: 2rem;
         height: 2rem;
@@ -49,27 +54,24 @@
     }
 
     #nlen--preheader-nav-donate,
-    #nlen--preheader-nav-shop
-     {
+    #nlen--preheader-nav-shop {
         width: 4rem;
         height: 4rem;
         position: absolute;
-        top:0;
+        top: 0;
         right: 0;
 
-        > span,
-        > span > strong {
+        >span,
+        >span>strong {
             font-size: 0 !important;
         }
     }
 
     #nlen--preheader-nav-donate {
-        transform:translateX(-4rem);
+        transform: translateX(-4rem);
     }
 
-    #nlen--preheader-nav-shop {
-
-    }
+    #nlen--preheader-nav-shop {}
 
     .nlen--header {
         .nlen--nav-logo {
@@ -129,7 +131,7 @@
         }
     }
 
-    
+
     .nlen--metrics-container {
         height: auto;
 
@@ -166,18 +168,18 @@
 
 
 
-/**/
+    /**/
 
-.nlen--events {
-    width: 100%;
-    flex-direction: column;
-}
+    .nlen--events {
+        width: 100%;
+        flex-direction: column;
+    }
 
-#nlen--upcoming-events main {
-    flex-direction: column;
-}
+    #nlen--upcoming-events main {
+        flex-direction: column;
+    }
 
-/**/
+    /**/
 
     #nlen--donate-cta {
         >.nlen--container {
@@ -186,8 +188,8 @@
     }
 
     #nlen--keep {
-        & > .nlen--container {
-            & > form {
+        &>.nlen--container {
+            &>form {
                 >p {
                     flex-direction: column;
                     width: 100%;
@@ -228,6 +230,7 @@
         p:first-of-type {
             order: 2;
         }
+
         .nlen--site-postfooter-links {
             position: relative;
             top: unset;
@@ -236,6 +239,65 @@
         }
     }
 
-    
+    /**/
 
+    #nlen--donations-cta {
+        padding-bottom: 2rem;
+
+        >.nlen--container {
+            width: unset;
+        }
+    }
+
+    #nlen--classy-donation-form {
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 2rem;
+
+        .nlen--container {
+            width: 100% !important;
+        }
+    }
+
+    #nlen--classy-donation-form-copy {
+        max-width: unset;
+        min-width: unset;
+        width: 100%;
+    }
+
+    #nlen--classy-donation-form-classy>div {
+        width: unset !important;
+        height: auto !important;
+    }
+
+    #nlen--other-ways-to-give-cta {
+        height: unset;
+    }
+
+    #nlen--other-ways-to-give-cta {
+        & .nlen--container {
+            h1 {
+                width: auto;
+            }
+        }
+    }
+
+    ul.other-ways-list {
+        >li {
+            width: unset;
+
+            >figure {
+                width: unset;
+
+                > div {
+                    width: unset;
+                    height: unset;
+                }
+
+                > figcaption {
+                    width: unset;
+                }
+            }
+        }
+    }
 }
