@@ -39,7 +39,8 @@ a {
     text-decoration: none;
 }
 
-a, button {
+a,
+button {
     box-shadow: none !important;
 }
 
@@ -2667,6 +2668,17 @@ Alumni sucess
             align-self: stretch;
             min-height: 10.6rem;
         }
+    }
+
+    #nlen--sponsors-carousel {
+        width: 100%;
+        height: 15rem;
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
+        }
+
     }
 }
 
