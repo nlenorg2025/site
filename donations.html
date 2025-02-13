@@ -12,16 +12,14 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./vendor/necolas/normalize.css">
-    <link rel="stylesheet" href="./vendor/splidejs/splide/css/splide.min.css">
-    <link rel="stylesheet" href="./vendor/splidejs/splide/css/themes/splide-default.min.css">
-    <link rel="stylesheet" href="./vendor/splidejs/splide-extension-video/css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/fonts/onest.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script type="text/javascript" src="./vendor/videojs/videojs-youtube.js"></script>
 
-    <script type="text/javascript" src="./vendor/splidejs/splide/js/splide.min.js"></script>
-    <script type="text/javascript"
-        src="./vendor/splidejs/splide-extension-video/js/splide-extension-video.min.js"></script>
 
 </head>
 
@@ -1144,11 +1142,91 @@
         <!-- sponsors -->
         <div id="nlen--sponsors">
             <div class="nlen--container">
-                <h1>Thank you to our generous sponsors.</h1>
-                <picture>
-                    <img src="./img/nlen--donations-sponsors.webp"
-                        style="display: block;object-fit: contain;width: 100%;">
-                </picture>
+                <header>
+                    <h1>Thank you to our generous sponsors.</h1>
+                </header>
+                <main>
+                    <div id="nlen--sponsors-carousel" class="splide" aria-label="NLEN Sponsors">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-1.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-2.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-3.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-4.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-5.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-6.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-7.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-8.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-9.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-10.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-11.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-12.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-13.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-14.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-15.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-16.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-17.webp" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./img/sponsors/nlen--sponsors-logo-18.webp" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        new Splide('#nlen--sponsors-carousel',
+                            {
+                                type: 'loop',
+                                autoplay: true,
+                                interval: 2500,
+                                perPage: 5,
+                                perMove: 1,
+                                arrows: false,
+                                pagination: false,
+                                breakpoints: {
+                                    640: {
+                                        perPage: 2,
+                                    },
+                                },
+                            }
+                        ).mount();
+                    });
+                </script>
             </div>
         </div>
         <!-- keep in touch -->
