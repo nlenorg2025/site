@@ -990,6 +990,15 @@ Logos
     }
 }
 
+@media only screen and (min-width: 640px),
+(orientation: landscape) {
+    .nlen--header.nlen--mobile-header,
+    .nlen--mobile-nav {
+        display: none !important;
+    }
+}
+
+
 
 /*
     Footer
@@ -3310,10 +3319,11 @@ ul.other-ways-list {
 
             a {
                 color: var(--colors-text-text-tertiary-600, #535862);
+                text-decoration: underline;
             }
 
             a:hover {
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
     }
