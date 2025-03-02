@@ -1572,7 +1572,7 @@ Preheader
     font-size: var(--Font-size-display-2xl, 4.5rem);
     font-style: normal;
     font-weight: 900;
-    line-height: var(--Line-height-display-xl, 4.5rem);
+    line-height: var(--Line-height-display-xl, 5rem);
     /* 100% */
     letter-spacing: -0.09rem;
     margin-bottom: 0;
