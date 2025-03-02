@@ -947,6 +947,7 @@ Logos
     font-weight: 600 !important;
     line-height: var(--Line-height-text-md, 1.5rem) !important;
     /* 150% */
+    text-transform:uppercase;
 }
 
 /**
