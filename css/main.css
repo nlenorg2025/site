@@ -896,6 +896,7 @@ Logos
     font-weight: 600;
     line-height: var(--Line-height-text-xl, 1.875rem);
     /* 150% */
+    text-transform: uppercase;
 }
 
 .has-arrow {
