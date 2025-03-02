@@ -1546,7 +1546,7 @@ Preheader
 
 .nlen--home-hero .hero-text-container {
     display: flex;
-    width: 49.5625rem;
+    width: 37.5625rem;
     height: 28.8125rem;
     /* max-width: var(--width-lg, 40rem); */
     padding: 0rem var(--container-padding-desktop, 2rem);
@@ -1557,7 +1557,7 @@ Preheader
     border-radius: var(--radius-md, 0.5rem);
     background: radial-gradient(50% 50% at 50% 50%, rgba(24, 29, 39, 0.60) 0%, rgba(24, 29, 39, 0.06) 100%);
     position: absolute;
-    bottom: -2.5rem;
+    bottom: 2.5rem;
     gap: 1rem;
 }
 
