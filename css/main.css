@@ -1559,7 +1559,7 @@ Preheader
     border-radius: var(--radius-md, 0.5rem);
     background: radial-gradient(50% 50% at 50% 50%, rgba(24, 29, 39, 0.60) 0%, rgba(24, 29, 39, 0.06) 100%);
     position: absolute;
-    bottom: 3.5rem;
+    bottom: 4rem;
     gap: 1rem;
 }
 
