@@ -1668,6 +1668,7 @@ Preheader
         outline: none;
         border: none;
         padding: 1.25rem;
+        appearance:none;
 
         option {
             color: var(--Component-colors-Components-Buttons-Secondary-button-secondary-fg, #414651);
