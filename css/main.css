@@ -1634,6 +1634,7 @@ Preheader
     gap: var(--spacing-xl, 1rem);
     flex-shrink: 0;
     background: var(--colors-gray-light-mode-50, #FAFAFA);
+    position:relative;
 
 
     label {
