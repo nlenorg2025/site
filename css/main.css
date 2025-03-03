@@ -1600,6 +1600,8 @@ Preheader
     align-items: flex-start;
     gap: 0.625rem;
     background: #FF4B00;
+    position:relative;
+    z-index:1;
 
     >.nlen--container {
         align-items: flex-start;
