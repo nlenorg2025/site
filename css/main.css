@@ -1622,6 +1622,8 @@ Preheader
     max-width: var(--container-max-width-desktop, 80rem);
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .nlen--user-search>p {
@@ -1698,6 +1700,10 @@ Preheader
         font-weight: 600;
         line-height: var(--Line-height-text-xl, 1.875rem);
         /* 150% */
+        position:absolute;
+        top: 50%;
+        right: 0;
+        transform:translateY(-50%);
     }
 }
 
