@@ -51,6 +51,10 @@ figure {
     margin-inline-end: 0;
 }
 
+
+label {
+    margin-bottom: 0;
+}
 /**/
 
 .nlen--container {
