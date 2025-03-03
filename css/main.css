@@ -1550,7 +1550,7 @@ Preheader
     display: flex;
     width: 37.5625rem;
     height: 28.8125rem;
-    /* max-width: var(--width-lg, 40rem); */
+    max-width: var(--width-lg, 40rem) !important;
     padding: 0rem var(--container-padding-desktop, 2rem);
     align-items: center;
     justify-content: center;
