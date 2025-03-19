@@ -2719,7 +2719,8 @@ Alumni sucess
     align-self: stretch;
     flex-wrap: wrap;
     margin-top: -7rem;
-
+    z-index: 1;
+    
     .nlen--container {
         flex-direction: row;
         flex-wrap: wrap;
