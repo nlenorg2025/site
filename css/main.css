@@ -51,10 +51,6 @@ figure {
     margin-inline-end: 0;
 }
 
-
-label {
-    margin-bottom: 0;
-}
 /**/
 
 .nlen--container {
@@ -67,6 +63,10 @@ label {
     align-self: stretch;
     margin: auto;
     flex-direction: column;
+}
+
+p strong {
+    display: inline;
 }
 
 @media only screen and (max-width: 659px),
@@ -386,9 +386,7 @@ MEGAMENU
 }
 
 .nlen--nav-item-list dt {
-    overflow: hidden;
     color: var(--Black, #000);
-    text-overflow: ellipsis;
 
     /* Text md/Semibold */
     font-family: var(--Font-family-font-family-body, Onest);
@@ -405,9 +403,7 @@ MEGAMENU
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     align-self: stretch;
-    overflow: hidden;
     color: var(--colors-text-text-tertiary-600, #535862);
-    text-overflow: ellipsis;
 
     /* Text sm/Regular */
     font-family: var(--Font-family-font-family-body, Onest);
@@ -943,7 +939,7 @@ Logos
 
 .eyebrow-2 {
     color: #6B140E !important;
-
+    text-transform: uppercase;
     /* Text md/Semibold */
     font-family: var(--Font-family-font-family-body, Onest) !important;
     font-size: var(--Font-size-text-md, 1rem) !important;
@@ -951,7 +947,6 @@ Logos
     font-weight: 600 !important;
     line-height: var(--Line-height-text-md, 1.5rem) !important;
     /* 150% */
-    text-transform:uppercase;
 }
 
 /**
@@ -998,6 +993,7 @@ Logos
 
 @media only screen and (min-width: 640px),
 (orientation: landscape) {
+
     .nlen--header.nlen--mobile-header,
     .nlen--mobile-nav {
         display: none !important;
@@ -1507,35 +1503,53 @@ Preheader
 /**/
 
 .nlen--home-hero {
-    height: 52.64rem;
+    height: 44.42rem;
     flex: 1 0 0;
     background: rgba(10, 13, 18, 0.67);
     position: relative;
-    background-image: url(../img/nlen--home-hero-background-2.webp);
-    background-position: top center;
+    background-image: url(../img/nlen--home-hero-bg1-2.webp);
+    background-size: 200%;
+    background-position: center;
+}
+
+
+
+.nlen--home-hero .nlen--home-hero-container {
+    margin: 0 auto;
+    width: 90rem;
+    height: 44.42rem;
+    position: relative;
+    background-image: url(../img/nlen--home-hero-bg1-2.webp);
+    background-position: bottom right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.nlen--home-hero>b {
+.nlen--home-hero.bg2,
+.nlen--home-hero .nlen--home-hero-container.bg2 {
+    background-image: url(../img/nlen--home-hero-bg2.webp);
+}
+
+.nlen--home-hero>b,
+.nlen--home-hero-container>b {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #FF4B000a;
+    background-color: #F34B0577;
+    display: block;
 }
 
-.nlen--home-hero .nlen--home-hero-container {
-    margin: 0 auto;
-    width: 80rem;
-    height: 100%;
-    position: relative;
+.nlen--home-hero>b {
+    backdrop-filter: blur(1rem);
+
 }
 
-/*.nlen--home-hero .hero-text-container {
+
+.nlen--home-hero .hero-text-container {
     display: flex;
-    width: 39.5625rem;
+    width: 33.5625rem;
     height: 28.8125rem;
     max-width: var(--width-lg, 40rem);
     padding: 0rem var(--container-padding-desktop, 2rem);
@@ -1544,28 +1558,12 @@ Preheader
     flex-shrink: 0;
     flex-direction: column;
     border-radius: var(--radius-md, 0.5rem);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(24, 29, 39, 0.60) 0%, rgba(24, 29, 39, 0.06) 100%);
     position: absolute;
     bottom: 4.5rem;
     gap: 1rem;
-}*/
-
-.nlen--home-hero .hero-text-container {
-    display: flex;
-    width: 37.5625rem;
-    height: 28.8125rem;
-    max-width: var(--width-lg, 40rem) !important;
-    padding: 0rem var(--container-padding-desktop, 2rem);
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-direction: column;
-    border-radius: var(--radius-md, 0.5rem);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(24, 29, 39, 0.60) 0%, rgba(24, 29, 39, 0.06) 100%);
-    position: absolute;
-    bottom: 4rem;
-    gap: 1rem;
+    left: 7rem;
 }
+
 
 .nlen--home-hero .hero-text-container>* {
     margin: 0;
@@ -1574,24 +1572,25 @@ Preheader
 
 .nlen--home-hero .hero-text-container h1 {
     color: #FF4B00;
-    font-family: var(--Font-family-font-family-display, "Onest");
-    font-size: var(--Font-size-display-2xl, 4.5rem);
+    text-shadow: 2px 1px 1px #00000077;
+    font-family: var(--Font-family-font-family-display, Onest);
+    font-size: var(--Font-size-display-2xl, 4.25rem);
     font-style: normal;
-    font-weight: 900;
-    line-height: var(--Line-height-display-xl, 5rem);
+    font-weight: 800;
+    line-height: var(--Line-height-display-xl, 1);
     /* 100% */
     letter-spacing: -0.09rem;
-    margin-bottom: 0;
 }
 
 .nlen--home-hero .hero-text-container p {
     color: var(--Colors-Text-text-primary_on-brand, #FFF);
+    text-shadow: 2px 1px 1px #00000077;
     /* Display sm/Regular */
-    font-family: var(--Font-family-font-family-display, "Onest");
-    font-size: var(--Font-size-display-sm, 1.875rem);
+    font-family: var(--Font-family-font-family-display, Onest);
+    font-size: var(--Font-size-display-sm, 1.525rem);
     font-style: normal;
-    font-weight: 400;
-    line-height: var(--Line-height-display-sm, 2.375rem);
+    font-weight: 300;
+    line-height: var(--Line-height-display-sm, 1.26667);
     /* 126.667% */
 }
 
@@ -1604,8 +1603,6 @@ Preheader
     align-items: flex-start;
     gap: 0.625rem;
     background: #FF4B00;
-    position:relative;
-    z-index:1;
 
     >.nlen--container {
         align-items: flex-start;
@@ -1626,8 +1623,6 @@ Preheader
     max-width: var(--container-max-width-desktop, 80rem);
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .nlen--user-search>p {
@@ -1638,7 +1633,6 @@ Preheader
     gap: var(--spacing-xl, 1rem);
     flex-shrink: 0;
     background: var(--colors-gray-light-mode-50, #FAFAFA);
-    position:relative;
 
 
     label {
@@ -1668,7 +1662,6 @@ Preheader
         outline: none;
         border: none;
         padding: 1.25rem;
-        appearance:none;
 
         option {
             color: var(--Component-colors-Components-Buttons-Secondary-button-secondary-fg, #414651);
@@ -1706,10 +1699,6 @@ Preheader
         font-weight: 600;
         line-height: var(--Line-height-text-xl, 1.875rem);
         /* 150% */
-        position:absolute;
-        top: 50%;
-        right: 0;
-        transform:translateY(-50%);
     }
 }
 
@@ -1717,7 +1706,7 @@ Preheader
 
 .nlen--social-proof-container {
     display: flex;
-    padding: 13.75rem 0rem var(--spacing-10xl, 8rem) 0rem;
+    padding: 4.88rem 0rem var(--spacing-10xl, 6.2rem) 0rem;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
@@ -1909,7 +1898,6 @@ Metrics section
 .nlen--metrics-container {
     display: flex;
     height: 28.4375rem;
-    border-top: 0.7rem solid #ffffff;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -2178,8 +2166,9 @@ Alumni sucess
 }
 
 .nlen--halfs-container>div>p {
+    display: block;
     color: var(--colors-text-text-primary-900, #181D27);
-
+    text-align: left;
     /* Text lg/Regular */
     font-family: var(--Font-family-font-family-body, Onest);
     font-size: var(--Font-size-text-lg, 1.125rem);
@@ -2339,6 +2328,7 @@ Alumni sucess
     align-items: center;
     gap: var(--spacing-7xl, 4rem);
     align-self: stretch;
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
 }
 
 #nlen--upcoming-events header {
@@ -2693,6 +2683,8 @@ Alumni sucess
             gap: var(--spacing-4xl, 2rem);
             align-self: stretch;
             min-height: 10.6rem;
+            width: 100vw;
+            transform: translateX(-19vw);
         }
     }
 
@@ -2719,9 +2711,7 @@ Alumni sucess
     align-self: stretch;
     flex-wrap: wrap;
     margin-top: -7rem;
-    position: relative;
-    z-index: 1;
-    
+
     .nlen--container {
         flex-direction: row;
         flex-wrap: wrap;
