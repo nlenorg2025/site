@@ -1549,7 +1549,7 @@ Preheader
 
 .nlen--home-hero .hero-text-container {
     display: flex;
-    width: 33.5625rem;
+    width: 34.5625rem;
     height: 28.8125rem;
     max-width: var(--width-lg, 40rem);
     padding: 0rem var(--container-padding-desktop, 2rem);
