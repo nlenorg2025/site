@@ -1537,7 +1537,7 @@ Preheader
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #F34B0577;
+    background-color: #33333377;
     display: block;
 }
 
@@ -1572,11 +1572,10 @@ Preheader
 
 .nlen--home-hero .hero-text-container h1 {
     color: #FF4B00;
-    text-shadow: 2px 1px 1px #00000077;
     font-family: var(--Font-family-font-family-display, Onest);
     font-size: var(--Font-size-display-2xl, 4.25rem);
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     line-height: var(--Line-height-display-xl, 1);
     /* 100% */
     letter-spacing: -0.09rem;
@@ -1584,7 +1583,6 @@ Preheader
 
 .nlen--home-hero .hero-text-container p {
     color: var(--Colors-Text-text-primary_on-brand, #FFF);
-    text-shadow: 2px 1px 1px #00000077;
     /* Display sm/Regular */
     font-family: var(--Font-family-font-family-display, Onest);
     font-size: var(--Font-size-display-sm, 1.525rem);
