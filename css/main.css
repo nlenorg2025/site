@@ -3335,3 +3335,7 @@ ul.other-ways-list {
     }
 
 }
+
+.nlen--social-proof-card .eyebrow {
+    text-transform:none;
+}
