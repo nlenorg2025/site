@@ -41,10 +41,7 @@
                     </p>
                 </div>
             </div>
-            <!-- preheader search form -->
-            <form id="nlen--preheader-search-dropdown-container">
-                <input id="nlen--preheader-search-dropdown" type="text" placeholder="Search...">
-            </form>
+
             <!-- preheader nav donate nav button -->
             <a id="nlen--preheader-nav-donate" class="nlen--preheader-nav-button" href="./donations.html">
                 <span>Donate today</span>
@@ -54,6 +51,10 @@
                 target="_blank">
                 <span>Shop <strong>Beelove&reg;</strong></span>
             </a>
+            <!-- preheader search form -->
+            <form id="nlen--preheader-search-dropdown-container">
+                <input id="nlen--preheader-search-dropdown" type="text" placeholder="Search">
+            </form>
         </div>
     </section>
     <!-- site header -->
@@ -209,37 +210,16 @@
                                 <div class="nlen--nav-content-left">
 
                                     <dl class="nlen--nav-item-list">
-                                        <!-- LIHEAP -->
+                                        <!-- Resources -->
                                         <a href="https://www.nlen.org/liheap" target="_blank">
                                             <dt>
                                                 <span class="nlen--nav-icon">
                                                     <img src="./img/svgs/liheap.svg">
                                                 </span>
-                                                LIHEAP
+                                                Resources
                                             </dt>
                                             <dd>
-                                                Utility bill Assistance
-                                            </dd>
-                                        </a>
-                                        <dt>
-                                            <span class="nlen--nav-icon">
-                                                <img src="./img/svgs/job-tools.svg">
-                                            </span>
-                                            Job Tools
-                                        </dt>
-                                        <dd>
-                                            Career guidance and resume help
-                                        </dd>
-                                        <!-- Hiring events -->
-                                        <a href="https://www.nlen.org/events" target="_blank">
-                                            <dt>
-                                                <span class="nlen--nav-icon">
-                                                    <img src="./img/svgs/hiring-events.svg">
-                                                </span>
-                                                Hiring Events
-                                            </dt>
-                                            <dd>
-                                                For graduates and employers
+                                                Utility bill help, grocery support, and more
                                             </dd>
                                         </a>
                                         <!-- Financial Readiness -->
@@ -253,6 +233,30 @@
                                             </dt>
                                             <dd>
                                                 Resources and training through our Financial Opportunity Center (FOC)
+                                            </dd>
+                                        </a>
+                                        <!-- job tools -->
+                                        <a href="#!">
+                                            <dt>
+                                                <span class="nlen--nav-icon">
+                                                    <img src="./img/svgs/job-tools.svg">
+                                                </span>
+                                                Job Tools
+                                            </dt>
+                                            <dd>
+                                                Career guidance and resume help
+                                            </dd>
+                                        </a>
+                                        <!-- Hiring events -->
+                                        <a href="https://www.nlen.org/events" target="_blank">
+                                            <dt>
+                                                <span class="nlen--nav-icon">
+                                                    <img src="./img/svgs/hiring-events.svg">
+                                                </span>
+                                                Hiring Events
+                                            </dt>
+                                            <dd>
+                                                For graduates and employers
                                             </dd>
                                         </a>
                                     </dl>
@@ -357,7 +361,7 @@
                                                 <span class="nlen--nav-icon">
                                                     <img src="./img/svgs/press-and-media.svg">
                                                 </span>
-                                                Press and Media
+                                                Press + Media
                                             </dt>
                                             <dd>
                                                 Latest news, media kit, and blog
@@ -373,7 +377,7 @@
                                                 style="display: block; height: 100%; object-fit: contain;">
                                         </picture>
                                         <h1>NLEN Campus</h1>
-                                        <p><span class="nlen--icon nlen--icon-small nlen--icon-video"></span><a
+                                        <p><a class="nlen--nav-link-2"
                                                 href="https://www.youtube.com/watch?v=tAwFcmNuAJs"
                                                 target="_blank">Welcome to NLEN Campus</a></p>
                                     </article>
@@ -664,10 +668,10 @@
                             <span class="nlen--nav-icon">
                                 <img src="https://new.nlen.org/img/svgs/liheap.svg">
                             </span>
-                            LIHEAP
+                            Resources
                         </dt>
                         <dd>
-                            Utility bill Assistance
+                            Utility bill help, grocery support, and more
                         </dd>
                     </a>
                     <dt>
@@ -789,7 +793,7 @@
                             <span class="nlen--nav-icon">
                                 <img src="https://new.nlen.org/img/svgs/press-and-media.svg">
                             </span>
-                            Press and Media
+                            Press + Media
                         </dt>
                         <dd>
                             Latest news, media kit, and blog
@@ -984,7 +988,6 @@
         <section class="nlen--home-hero">
             <b></b>
             <div class="nlen--home-hero-container">
-                <b></b>
                 <div class="hero-text-container">
                     <h1>
                         Empowering<br>your journey to employment success.
@@ -995,19 +998,29 @@
                 </div>
             </div>
         </section>
+        <script>
+            var homeHero = document.querySelector('.nlen--home-hero');
+            var changeHero = window.localStorage.getItem('nlen_change_hero') !== null ? window.localStorage.getItem('nlen_change_hero') : '0';
+            if (changeHero === '1') {
+                homeHero.classList.add('bg2');
+                window.localStorage.setItem('nlen_change_hero', '0');
+            } else {
+                window.localStorage.setItem('nlen_change_hero', '1');
+            }
+        </script>
         <!-- user search proof -->
         <section class="nlen--user-search-container">
             <div class="nlen--container">
                 <form id="nlen--user-search" class="nlen--user-search">
                     <p>
-                        <label for="i-am-a">I AM A:</label>
+                        <label for="i-am-a"><span>I AM A:</span></label>
                         <select id="i-am-a" name="i-am-a">
                             <option value="returning-citizen">Returning Citizen</option>
                             <option value="young-adult">Young Adult (18-24)</option>
                             <option value="job-seeker">Job Seeker</option>
                             <option value="employer">Employer Looking to Hire</option>
                         </select>
-                        <label for="seeking">SEEKING:</label>
+                        <label for="seeking"><span>SEEKING:</span></label>
                         <select id="seeking" name="seeking">
                             <option value="training">Training + Skill Certification</option>
                             <option value="financial-education">Financial Education</option>
@@ -1016,7 +1029,7 @@
                             <option value="food-security">Food Security</option>
                             <option value="potential-candidates" disabled>Potential Candidates</option>
                         </select>
-                        <button type="submit"><span class="has-arrow">GO</span></button>
+                        <button type="submit"><span class="has-arrow">Go&emsp;</span></button>
                     </p>
                 </form>
                 <script type="text/javascript">
@@ -1199,7 +1212,7 @@
                 </article>
                 <article class="nlen--metrics-card" style="gap: 0;">
                     <p>3<small style="font-size:0.25em;">out of</small>4</p>
-                    <p>of alumni increase net worth, income, and FICA&nbsp;score</p>
+                    <p>increase net worth, income, and FICA&nbsp;score</p>
                 </article>
                 <article class="nlen--metrics-card">
                     <p><small style="font-size: 0.45em;">&lt;</small>10<small>%</small></p>
@@ -1244,7 +1257,7 @@
                                                     </video>
                                                 </figure>
                                                 <div class="alumni-sucess-story">
-                                                    <h1>Charlotte's Story</h1>
+                                                    <h1>Charlotte’s sweet journey</h1>
                                                     <p>From leaving incarceration to becoming the lead production
                                                         manager at Sweet Beginnings in just 4 years.</p>
                                                 </div>
@@ -1260,9 +1273,7 @@
                                                 </figure>
                                                 <div class="alumni-sucess-story">
                                                     <h1>Jakacki’s Partnership</h1>
-                                                    <p>The local barrel manufacturer’s long-term
-                                                        relationship with NLEN provides steady employment and a powerful
-                                                        partnership.</p>
+                                                    <p>Its long-term relationship with NLEN provides steady employment.</p>
                                                 </div>
                                             </article>
                                         </li>
@@ -1276,8 +1287,7 @@
                                                 </figure>
                                                 <div class="alumni-sucess-story">
                                                     <h1>Elaine’s Story</h1>
-                                                    <p>Ready to take back her name and sense of self, a
-                                                        graduate of U-Turn Permitted seeks, lands, and thrives in her
+                                                    <p>A graduate of U-Turn Permitted seeks, lands, and thrives in her
                                                         dream job — at NLEN.</p>
                                                 </div>
                                             </article>
@@ -1335,11 +1345,12 @@
                 <!-- eyebrow -->
                 <p class="eyebrow eyebrow-2">NLEN IN ACTION</p>
                 <!-- title -->
-                <h1><strong>NLEN receives Citi Foundation Progress Award</strong></h1>
+                <h1>NLEN receives Citi Foundation Progress Award</h1>
                 <!-- support text -->
                 <p>NLEN is the proud recipient of the <strong>Citi Foundation Progress Maker Award</strong>. This
                     award help us spread the word about our mission and work far and wide.</p>
-                <p>Read our feature <strong>CityLab</strong> about social enterprises who are "building businesses and
+                <p>Read our feature in <a href="https://www.bloomberg.com/citylab" target="_blank">CityLab</a> about social
+                    enterprises who are "building businesses and
                     hope, one person at a time".</p>
                 <!-- toolbar -->
                 <p>
@@ -1360,7 +1371,7 @@
                 <!-- eyebrow -->
                 <p class="eyebrow eyebrow-2">OUR IMPACT</p>
                 <!-- title -->
-                <h1><strong>Improving lives through</strong>training and employment opportunities</h1>
+                <h1>Improving lives through training and employment opportunities</h1>
                 <!-- support text -->
                 <p>Given the high rate of poverty resulting from racial and economic wealth disparities, we serve the
                     unemployed and asset-limited, income-constrained employed populations in North&nbsp;Lawndale. We
@@ -1385,59 +1396,105 @@
                 <header>
                     <div>
                         <p><span class="eyebrow-2">Discover</span></p>
-                        <h1>Upcoming</h1>
+                        <h1>Upcoming at NLEN</h1>
                     </div>
                 </header>
                 <main>
                     <div class="nlen--events">
-                        <article class="nlen--event">
-                            <picture class="nlen--event-picture">
-                                <img src="./img/nlen--home-upcoming-1.jpg">
-                            </picture>
-                            <p class="pretitle">
-                                Benefit • 13 Feb 2025
-                            </p>
-                            <a href="https://www.classy.org/event/north-lawndale-employment-network-sweet-beginnings-tea-2025/e637906"
-                                target="_blank">
-                                <h1>Join Us at Our Sweet Beginnings Tea February 13th!</h1>
-                            </a>
-                            <p class="support-text">
-                                Wear your favorite "Tea" Hat or Fascinator!
-                            </p>
+                        <!-- event 1 -->
+                        <article class="nlen--event-card">
+                            <img src="./img/nlen--upcoming-events-card-1.webp">
+                            <div class="event-content">
+                                <span class="tag">FREE EVENT</span>
+                                <h1>Clear Your Record With NLEN & New Leaf Illinois!<br><span>1111 South Homan Avenue
+                                        Chicago, IL 60624</span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros.</p>
+                                <!-- toolbar -->
+                                <p>
+                                    <a href="#" target="_blank" class="nlen--terciary-button">
+                                        <span class="orange">View event</span>
+                                        <b class="chevron"></b>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="event-date">
+                                <span class="day-name">
+                                    Thurs
+                                </span>
+                                <span class="day-number">
+                                    3
+                                </span>
+                                <span class="month-year">
+                                    Apr 2025
+                                </span>
+                            </div>
                         </article>
-                        <article class="nlen--event">
-                            <picture class="nlen--event-picture">
-                                <img src="./img/nlen--upcoming-home-2.webp">
-
-                            </picture>
-                            <p class="pretitle">
-                                Infosession • 26 Feb 2025
-                            </p>
-                            <a target="_blank"
-                                href="https://www.eventbrite.com/e/craft-your-path-open-house-at-north-lawndale-employment-network-tickets-1246252026359?aff=ebdsoporgprofile">
-                                <h1>Craft Your Path Open House</h1>
-                            </a>
-                            <p class="support-text">Learn about our workforce training program for job seekers ages 18
-                                to 24.
-                            </p>
+                        <!-- event 2 -->
+                        <article class="nlen--event-card">
+                            <img src="./img/nlen--upcoming-events-card-2.webp">
+                            <div class="event-content">
+                                <!-- tag -->
+                                <span class="tag">FREE EVENT</span>
+                                <!-- title + location -->
+                                <h1>Budgets Made Easy: NLEN Budget & Savings Workshop with Capital One!<br><span>1111
+                                        South Homan Avenue Chicago, IL 60624</span></h1>
+                                <!-- content-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros.</p>
+                                <!-- toolbar -->
+                                <p>
+                                    <a href="#" target="_blank" class="nlen--terciary-button">
+                                        <span class="orange">View event</span>
+                                        <b class="chevron"></b>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="event-date">
+                                <span class="day-name">
+                                    Thurs
+                                </span>
+                                <span class="day-number">
+                                    13
+                                </span>
+                                <span class="month-year">
+                                    Mar 2025
+                                </span>
+                            </div>
                         </article>
-                        <article class="nlen--event">
-                            <picture class="nlen--event-picture">
-                                <img src="./img/nlen--upcoming-home-2.webp">
-                            </picture>
-                            <p class="pretitle">
-                                Lorem ipsum • 31 Feb 2025
-                            </p>
-                            <a target="_blank" href="!#">
-                                <h1>This is a test title</h1>
-                            </a>
-                            <p class="support-text">Learn about our support text on this event landing page.
-                            </p>
+                        <!-- event 3 -->
+                        <article class="nlen--event-card">
+                            <img src="./img/nlen--upcoming-events-card-3.webp">
+                            <div class="event-content">
+                                <span class="tag">FREE EVENT</span>
+                                <h1>Clear Your Record With NLEN & New Leaf Illinois!<br><span>1111 South Homan Avenue
+                                        Chicago, IL 60624</span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros.</p>
+                                <!-- toolbar -->
+                                <p>
+                                    <a href="#" target="_blank" class="nlen--terciary-button">
+                                        <span class="orange">View event</span>
+                                        <b class="chevron"></b>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="event-date">
+                                <span class="day-name">
+                                    Thurs
+                                </span>
+                                <span class="day-number">
+                                    13
+                                </span>
+                                <span class="month-year">
+                                    Feb 2025
+                                </span>
+                            </div>
                         </article>
                     </div>
                 </main>
                 <footer>
-                    <p><a class="nlen--secondary-button" style="width: 13.8rem;" href="https://www.nlen.org/events"
+                    <p><a class="nlen--secondary-button" style="width: 20.5rem;" href="https://www.nlen.org/events"
                             target="_blank"><span class="has-arrow black">View all
                                 events</span></a></p>
                 </footer>
@@ -1662,7 +1719,7 @@
                     Hours: 9am - 4pm<br>
                     <a href="mailto:info@nlen.org">info@nlen.org</a> | <a href="tel:+17736381825">+1 773-638-1825</a>
                 </p>
-                <p>EIN: 364-29-5189</p>
+                <p><b style="font-weight: 600;">EIN: 364-29-5189</b></p>
 
             </div>
             <div class="nlen--footer-links">
@@ -1708,7 +1765,7 @@
     <section class="nlen--site-postfooter">
         <div class="nlen--container">
             <p>
-                ©2025 NLEN All rights reserved.
+                ©2025 NLEN All rights reserved. <a>Diversity and Inclusion Statement</a> | <a>Privacy Policy</a> | <a>Terms</a>
             </p>
             <p class="nlen--site-postfooter-links">
                 <a class="youtube" href="https://www.youtube.com/c/NlenOrg" target="_blank">NLEN on YouTube</a>
