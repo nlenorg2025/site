@@ -2146,6 +2146,7 @@ Alumni sucess
             flex: 1 0 0;
             /* Shadows/shadow-xl */
             box-shadow: 0px 20px 24px -4px var(--Colors-Effects-Shadows-shadow-xl_01, rgba(10, 13, 18, 0.08)), 0px 8px 8px -4px var(--Colors-Effects-Shadows-shadow-xl_02, rgba(10, 13, 18, 0.03)), 0px 3px 3px -1.5px var(--Colors-Effects-Shadows-shadow-xl_03, rgba(10, 13, 18, 0.04));
+            background-color: #ffffff;
         }
     }
 
