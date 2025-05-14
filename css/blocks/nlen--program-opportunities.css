@@ -1,0 +1,102 @@
+.nlen--program-opportunities {
+    
+    .nlen--container {
+        display: flex;
+        padding: 4.9375rem 2rem;
+        gap: var(--spacing-7xl, 4rem);
+        flex-shrink: 0;
+        align-self: stretch;
+        flex-direction: row;
+
+        .heading-and-support-text {
+            display: flex;
+            width: 22.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 0 0 auto;
+            align-self: stretch;
+
+            h2 {
+                color: var(--colors-text-text-brand-tertiary-600, #F34B05);
+
+                /* Display md/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            display: flex;
+            width: 47rem;
+            padding: 0rem var(--spacing-4xl, 2rem);
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-7xl, 4rem);
+            flex: 0 0 auto;
+            align-self: stretch;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: stretch;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                row-gap: 1.25rem;
+
+                li {
+                    width: 100%;
+                    position: relative;
+                    color: var(--colors-text-text-tertiary-600, #535862);
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-md, 1rem);
+                    font-style: normal;
+                    font-weight: 400;
+                    padding-left: 2.75rem;
+                    line-height: 1.75rem;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-image: url(../svgs/icon-check-circle.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 1.75rem;
+                        height: 1.75rem;
+                    }
+
+                    a {
+                        color: #535862;
+                        font-family: var(--Font-family-font-family-body, Onest);
+                        font-size: var(--Font-size-text-md, 1rem);
+                        font-style: normal;
+                        font-weight: 600;
+
+                        span {
+                            text-decoration-line: underline;
+                            text-decoration-style: solid;
+                            text-decoration-skip-ink: auto;
+                            text-decoration-thickness: auto;
+                            text-underline-offset: auto;
+                            text-underline-position: from-font;
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}

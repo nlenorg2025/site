@@ -1,0 +1,81 @@
+.nlen--program-get-started {
+    display: flex;
+    height: 22.4375rem;
+    padding: var(--spacing-9xl, 6rem) 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-7xl, 4rem);
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #FF4040;
+
+    .nlen--container {
+        display: flex;
+        max-width: var(--container-max-width-desktop, 80rem);
+        padding: 0rem 10.875rem 0rem var(--container-padding-desktop, 2rem);
+        align-items: flex-start;
+        gap: 14.75rem;
+        align-self: stretch;
+        flex-direction: row;
+
+        .heading-and-supporting-text {
+            display: flex;
+            width: 24.8125rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-2xl, 1.25rem);
+
+            .subheading {
+                color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Colors-Text-text-primary_on-brand, #FFF);
+
+                /* Display md/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+
+        }
+
+        .content {
+            display: flex;
+            width: 30rem;
+            max-width: var(--width-sm, 30rem);
+            padding-top: var(--spacing-lg, 0.75rem);
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                color: var(--Colors-Text-text-primary_on-brand, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+            }
+
+            p:last-of-type {
+                margin-top: 4rem;
+            }
+
+        }
+    }
+
+}

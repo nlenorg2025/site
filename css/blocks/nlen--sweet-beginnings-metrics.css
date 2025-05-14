@@ -1,0 +1,107 @@
+.nlen--sweet-beginnings-metrics {
+    padding-top: 10rem;
+    padding-bottom: 1.56rem;
+    background-image: url(../../img/programs--sweet-beginnings/awards-items.jpg);
+    background-color: #FF4B00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+
+    .nlen--container {
+        gap: 3.56rem;
+
+        .nlen--metrics-row {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 auto;
+            gap: 2rem;
+
+            .nlen--metrics-card {
+                display: flex;
+                width: 18.4375rem;
+                min-height: 16.4375rem;
+                padding: var(--spacing-4xl, 2rem) var(--spacing-3xl, 1.5rem);
+                flex-direction: column;
+                align-items: center;
+                gap: 0.125rem;
+                flex-shrink: 0;
+                border: 1px solid rgba(255, 255, 255, 0.60);
+                background: rgba(255, 255, 255, 0.85);
+                /* medium */
+                box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.12), 0px 4px 6px -2px rgba(0, 0, 0, 0.12);
+
+                &:hover {
+                    border: 1px solid rgba(255, 255, 255, 0.60);
+                    opacity: 0.9;
+                    background: rgba(255, 255, 255, 0.85);
+                    /* medium */
+                    box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.12), 0px 4px 6px -2px rgba(0, 0, 0, 0.12);
+                }
+
+                p:first-of-type {
+                    color: var(--LNEN--DrkPink, #FF4040);
+                    text-align: center;
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: 4.5rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 4.5rem;
+                    /* 100% */
+                    letter-spacing: -0.09rem;
+                }
+
+                p:last-of-type {
+                    color: var(--colors-gray-light-mode-900, #272018);
+                    text-align: center;
+
+                    /* Text xl/Medium */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-xl, 1.25rem);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: var(--Line-height-text-xl, 1.875rem);
+                    /* 150% */
+                }
+
+
+                &.awards-card {
+
+                    img {
+                        width: 6.25rem;
+                        height: 6.25rem;
+                        aspect-ratio: 1/1;
+                        display: block;
+                    }
+
+                    p:first-of-type {
+                        margin-bottom: 0;
+                        color: var(--Color-Neutral-black, #000);
+                        text-align: center;
+
+                        /* Display xs/Semibold */
+                        font-family: var(--Font-family-font-family-display, Onest);
+                        font-size: var(--Font-size-display-xs, 1.5rem);
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: var(--Line-height-display-xs, 2rem);
+                        /* 133.333% */
+                    }
+
+                    p:last-of-type {
+                        margin-bottom: 0;
+                        color: var(--Color-Neutral-black, #000);
+
+                        /* Text xl/Medium */
+                        font-family: var(--Font-family-font-family-body, Onest);
+                        font-size: var(--Font-size-text-xl, 1.25rem);
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: var(--Line-height-text-xl, 1.875rem);
+                    }
+                }
+            }
+
+        }
+    }
+}

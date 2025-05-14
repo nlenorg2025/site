@@ -55,25 +55,8 @@
 
     #nlen--preheader-nav-donate,
     #nlen--preheader-nav-shop {
-        width: 4rem;
-        height: 4rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        >span,
-        >span>strong {
-            font-size: 0 !important;
-        }
+        display: none;
     }
-
-    #nlen--preheader-nav-donate {
-        transform: translateX(-4rem);
-    }
-
-    #nlen--preheader-nav-shop {}
-
-
 
     .nlen--header .nlen--nav-logo {
         margin-left: 0;

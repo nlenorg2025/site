@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Onest', Arial, Helvetica, sans-serif;
+    text-rendering: geometricPrecision;
 }
 
 h1,
@@ -69,6 +70,10 @@ figure {
 p strong {
     display: inline;
 }
+
+strong.thinner {
+    font-weight: 500;
+} 
 
 @media only screen and (max-width: 659px),
 (orientation: portrait) {
@@ -128,7 +133,7 @@ p strong {
         font-weight: 600;
         line-height: var(--Line-height-text-md, 1.5rem);
         /* 150% */
-        text-decoration:none;
+        text-decoration: none;
         position: relative;
 
         &::after {
@@ -258,6 +263,32 @@ p strong {
         background-image: url(./svgs/arrow-right-orange.svg);
     }
 }
+
+
+/**/
+
+ol.steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: step 0;
+
+    li {
+        padding-top: 1.5em;
+        position: relative;
+        counter-increment: step;
+
+        &::before {
+            position: absolute;
+            top:0;
+            left: 0;
+            content: 'Step ' counter(step) '.';
+        }
+
+    }
+
+}
+
 
 /*
 Icons
@@ -1264,42 +1295,39 @@ Postfooter
     transform: translateY(-50%);
 
     a {
-        display: block;
+        display: flex;
         width: 1.5rem;
         height: 1.5rem;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
         cursor: pointer;
-        text-indent: -999999px;
         text-decoration: none;
+        transition: 0.25s ease-in all;
+        flex-direction: column;
+        justify-content: center;
+    
+        span {
+            text-indent: -999999px;
+            font-size: 0;
+            line-height: 0;
+            color: transparent;
+            display: none;
+        }
+
+        &:hover svg * {
+            fill: #FF4B00;
+        }
+    
+        &::after {
+            display: none;
+        }
+
     }
+    
+}
 
-    a::after {
-        display: none;
-    }
+/**/
 
-    .youtube {
-        background-image: url(./svgs/icon-youtube.svg);
-    }
-
-    .linkedin {
-        background-image: url(./svgs/icon-linkedin.svg);
-    }
-
-    .facebook {
-        background-image: url(./svgs/icon-facebook.svg);
-    }
-
-    .instagram {
-        background-image: url(./svgs/icon-instagram.svg);
-    }
-
-    .x {
-        background-image: url(./svgs/icon-x.svg);
-    }
-
-
+.vjs-poster img {
+    object-fit: cover !important;
 }
 
 /*
@@ -2208,6 +2236,15 @@ Alumni sucess
     }
 }
 
+.splide__arrow {
+    transition: 0.0125s ease-in-out all;
+    will-change: opacity;
+}
+
+.splide__arrow[disabled] {
+    opacity: 0;
+}
+
 /**/
 
 .nlen--halfs-container {
@@ -2828,7 +2865,7 @@ Alumni sucess
     .nlen--container {
         flex-direction: row;
         flex-wrap: wrap;
-        row-gap: var(--spacing-7xl, 4rem);
+        row-gap: 0.5rem;
         column-gap: var(--spacing-3xl, 1.5rem);
         ;
     }
@@ -2882,7 +2919,8 @@ Alumni sucess
             width: 17.875rem;
             flex-direction: column;
             align-items: flex-start;
-            gap: var(--spacing-3xl, 1.5rem);
+            gap: 0.5rem;
+            min-height: 22.94rem;
 
             h1 {
                 color: var(--colors-text-text-primary-900, #181D27);
@@ -3007,13 +3045,15 @@ Alumni sucess
         }
 
         >picture {
-            width: 37.25rem;
-            height: 25.4375rem;
+            width: 44.14756rem;
+            height: 24.71694rem;
+            flex-shrink: 0;
+            aspect-ratio: 706.36/395.47;
 
-            >img {
-                display: block;
+
+            .video-js {
+                width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
     }
@@ -3082,13 +3122,24 @@ Alumni sucess
 
     >figure {
         width: 38rem;
-        height: 27.0625rem;
-        background-color: #ff00ff77;
+        height: calc(38rem * 9 / 16);
+        background-color: #33333333;
+        position: relative;
 
 
         .video-js {
+            width: 38rem;
+            height: calc(38rem * 9 / 16);
+        }
+
+        >img {
             width: 100%;
-            height: 100%;
+            height: auto;
+            object-fit: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
     }
@@ -3101,6 +3152,7 @@ Alumni sucess
         align-items: flex-start;
         gap: var(--spacing-2xl, 0.25rem);
         align-self: stretch;
+        height: 12.25rem;
 
         border-radius: var(--radius-none, 0rem);
         border-top: 1px solid #FFEFD6;
@@ -3114,10 +3166,10 @@ Alumni sucess
 
             /* Display sm/Bold */
             font-family: var(--Font-family-font-family-display, Onest);
-            font-size: var(--Font-size-display-sm, 1.875rem);
+            font-size: var(--Font-size-display-sm, 1.725rem);
             font-style: normal;
             font-weight: 900;
-            line-height: var(--Line-height-display-sm, 2.375rem);
+            line-height: var(--Line-height-display-sm, 1.26667);
             /* 126.667% */
         }
 
@@ -3143,7 +3195,27 @@ Alumni sucess
             font-weight: 400;
             line-height: var(--Line-height-text-xl, 1.875rem);
             /* 150% */
+
+
+        a {
+            color: var(--colors-text-text-primary-900, #272018);
+
+            /* Text xl/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-xl, 1.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-xl, 1.875rem);
+            /* 150% */
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: auto;
+            text-underline-offset: auto;
+            text-underline-position: from-font;
         }
+        }
+
 
     }
 
@@ -3596,6 +3668,108 @@ ul.other-ways-list {
             line-height: 150%;
             /* 1.3125rem */
         }
+    }
+
+}
+
+.nlen--testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-7xl, 4rem);
+    background: var(--Colors-Background-bg-brand-section, #6B140E);
+    padding: var(--spacing-9xl, 6rem) 0rem;
+
+
+    .nlen--container {
+        width: 90rem;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+
+        picture {
+            width: 25.0625rem;
+            height: 18.04506rem;
+            position: relative;
+
+            img {
+                display: block;
+                object-fit: contain;
+                width: 100%;
+            }
+
+            .tag {
+                position: absolute;
+                width: 5.28975rem;
+                height: 2.45019rem;
+                flex-shrink: 0;
+                background: #FF4B00;
+                color: #FFF;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                /* Display xs/Bold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-xs, 1.5rem);
+                font-style: normal;
+                font-weight: 900;
+
+                top: 1.36rem;
+                right: 1.57rem;
+            }
+        }
+
+        div {
+            display: flex;
+            max-width: var(--width-xl, 48rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+            flex: 1 0 0;
+            width: 41rem;
+
+            p:not(.testimonial--name),
+            p:not(.testimonial--supporting-text) {
+                color: var(--Colors-Text-text-primary_on-brand, #FFF);
+
+                /* Display sm/Medium italic */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-sm, 1.875rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-display-sm, 2.375rem);
+                /* 126.667% */
+            }
+
+            p.testimonial--name {
+                color: var(--Colors-Text-text-primary_on-brand, #FFF);
+                margin-top: 2em;
+                /* Display xs/Medium */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-xs, 1.5rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-display-xs, 2rem);
+            }
+
+            p.testimonial--supporting-text {
+                color: var(--Colors-Text-text-tertiary_on-brand, #FFD19A);
+
+                /* Text md/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 300;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+
+        }
+
     }
 
 }

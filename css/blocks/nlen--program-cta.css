@@ -1,0 +1,36 @@
+.nlen--program-cta {
+    display: flex;
+    height: 17.75rem;
+    padding: var(--spacing-7xl, 4rem);
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: var(--Colors-Background-bg-brand-solid, #F34B05);
+
+    .cta {
+        color: var(--Colors-Text-text-primary_on-brand, #FFF);
+        text-align: center;
+        margin-bottom: 2rem;
+        /* Display md/Semibold */
+        font-family: var(--Font-family-font-family-display, Onest);
+        font-size: var(--Font-size-display-md, 2.25rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--Line-height-display-md, 2.75rem);
+        /* 122.222% */
+        letter-spacing: -0.045rem;
+    }
+
+    .nlen--primary-button {
+        color: var(--Colors-Text-text-primary_on-brand, #FFF);
+        /* Text xl/Semibold */
+        font-family: var(--Font-family-font-family-body, Onest);
+        font-size: var(--Font-size-text-xl, 1.25rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--Line-height-text-xl, 1.875rem);
+        /* 150% */
+    }
+}

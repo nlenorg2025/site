@@ -1,0 +1,38 @@
+.nlen--sweet-beginnings-impact-cta {
+    background: var(--LNEN--DrkPink, #FF4040);
+    padding: 4.375rem 0rem 3.56rem 0rem;
+    color: #ffffff;
+
+
+    .nlen--container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.0625rem;
+
+        .tagline {
+            color: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+
+            /* Text md/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+        }
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-sm, 1.875rem);
+            font-style: normal;
+            font-weight: 700;
+            line-height: var(--Line-height-display-sm, 2.375rem);
+            /* 126.667% */
+            max-width: 49.125rem;
+        }
+
+    }
+
+}

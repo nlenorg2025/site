@@ -1,0 +1,56 @@
+.nlen--sweet-beginnings-featured {
+    background-color: #FFD9D9;
+    border-top: 3.5rem solid #FF6D44;
+    border-bottom: 3.8rem solid #FF6D44;
+
+    .nlen--container {
+        padding: 1.5rem 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: #000000;
+
+        h3 {
+            color: #000;
+            text-align: center;
+            /* Text xl/Bold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-xl, 1.25rem);
+            font-style: normal;
+            font-weight: 900;
+            line-height: var(--Line-height-text-xl, 1.875rem);
+            /* 150% */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+
+            li {
+                
+            }
+
+        }
+
+        p {
+            color: #000;
+            text-align: center;
+
+            /* Text xl/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-xl, 1.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-xl, 1.875rem);
+            /* 150% */
+        }
+
+
+    }
+
+}

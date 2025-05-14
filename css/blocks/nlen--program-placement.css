@@ -1,0 +1,113 @@
+.nlen--program-program-placement {
+
+    display: flex;
+    padding: 4.9375rem var(--spacing-9xl, 6rem) var(--spacing-7xl, 4rem) var(--spacing-9xl, 6rem);
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4rem var(--spacing-7xl, 4rem);
+    flex-wrap: wrap;
+    background: var(--Colors-Background-bg-brand-section, #6B140E);
+
+    .nlen--container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4rem;
+        flex: 0 0 auto;
+
+        .content {
+            display: flex;
+            min-width: var(--width-sm, 30rem);
+            max-width: var(--paragraph-max-width, 45rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-3xl, 1.5rem);
+            flex: 1 0 0;
+
+            color: var(--Colors-Text-text-primary_on-brand, #FFF);
+
+            /* Text lg/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+
+            h2 {
+                color: var(--Colors-Text-text-brand-tertiary_alt, #F34B05);
+
+                /* Display md/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+
+            .subheading {
+                color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+
+                /* Text lg/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+            }
+
+
+
+        }
+
+        .divider {
+            height: 19.77825rem;
+            width: 0.1245rem;
+            background-color: var(--Colors-Foreground-fg-brand-primary_alt, #F34B05);
+        }
+
+        .quote-wrap {
+            display: flex;
+            width: 31.75rem;
+            flex-basis: auto;
+            padding: var(--spacing-md, 0.5rem) 0rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+
+            blockquote {
+                color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+                padding: 0;
+                margin: 0;
+                /* Display xs/Medium italic */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-xs, 1.5rem);
+                font-style: normal;
+                font-weight: 500;
+                line-height: var(--Line-height-display-xs, 2rem);
+                /* 133.333% */
+            }
+
+            .quote-author {
+                color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+
+                /* Text md/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+        }
+
+
+
+    }
+}

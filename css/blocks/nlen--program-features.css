@@ -1,0 +1,190 @@
+.nlen--program-features {
+    display: flex;
+    padding-top: var(--spacing-9xl, 6rem);
+    padding-bottom: var(--spacing-9xl, 6rem);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-7xl, 4rem);
+    flex-shrink: 0;
+    align-self: stretch;
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+
+    .nlen--container {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .nlen--container:first-of-type {
+
+        .heading-and-supporting-text {
+            display: flex;
+            max-width: var(--width-xl, 48rem);
+            width: 48rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-2xl, 1.25rem);
+            align-self: stretch;
+
+            .subheading {
+                color: var(--colors-text-text-brand-secondary-700, #BD4A02);
+                text-transform: uppercase;
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--colors-text-text-brand-tertiary-600, #F34B05);
+
+                /* Display md/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+
+            p:not(.subheading) {
+                color: var(--colors-text-text-tertiary-600, #535862);
+
+                /* Text xl/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-xl, 1.25rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-xl, 1.875rem);
+                /* 150% */
+
+                strong {
+                    color: var(--colors-text-text-tertiary-600, #535862);
+
+                    /* Text xl/Regular */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-xl, 1.25rem);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: var(--Line-height-text-xl, 1.875rem);
+                }
+
+            }
+
+            &+a {
+                display: flex;
+                width: 17.875rem;
+                padding: 0.625rem 0.875rem;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-xs, 0.25rem);
+                border: 2px solid var(--NLEN-button-stroke, #414651);
+
+                /* Shadows/shadow-xs-skeuomorphic */
+                box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+
+                position: absolute;
+                top: 3.06rem;
+                right: 3.56rem;
+
+                span {
+                    display: flex;
+                    padding: 0rem var(--spacing-xxs, 0.125rem);
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--NLEN-button-stroke, #414651);
+                }
+            }
+
+        }
+
+    }
+
+    .nlen--container:last-of-type {
+
+        .features {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: var(--spacing-7xl, 4rem) var(--spacing-4xl, 2rem);
+            align-self: stretch;
+            flex-wrap: wrap;
+
+            .feature {
+                display: flex;
+                align-items: flex-start;
+                align-self: stretch;
+                flex-wrap: wrap;
+                width: 23.9rem;
+                flex: 0 0 auto;
+                flex-direction: column;
+                min-height: 13.9rem;
+
+                .icon {
+                    display: flex;
+                    padding: 0.6875rem 0.8125rem 0.8125rem 0.6875rem;
+                    justify-content: center;
+                    align-items: center;
+                    width: 3rem;
+                    height: 3rem;
+
+                    border-radius: var(--radius-lg, 0.625rem);
+                    border: 1px solid var(--Color-Neutral-white, #FFF);
+                    background-color: var(--Colors-Background-bg-primary, #FFF);
+
+                    /* Shadows/shadow-xs-skeuomorphic */
+                    box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+                
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+
+                }
+
+                h3 {
+                    color: var(--colors-text-text-primary-900, #272018);
+
+                    /* Text xl/Semibold */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-xl, 1.25rem);
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: var(--Line-height-text-xl, 1.875rem);
+                    /* 150% */
+                    margin-top: 1.25rem;
+                }
+
+                ul {
+                    list-style: disc;
+                    padding-left: 1rem;
+
+                    li {
+                        color: var(--colors-text-text-tertiary-600, #535862);
+
+                        /* Text md/Regular */
+                        font-family: var(--Font-family-font-family-body, Onest);
+                        font-size: var(--Font-size-text-md, 1rem);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: var(--Line-height-text-md, 1.5rem);
+                        /* 150% */
+                    }
+                }
+
+                ul:has(li:only-child) {
+                    list-style: none;
+                    padding-left: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

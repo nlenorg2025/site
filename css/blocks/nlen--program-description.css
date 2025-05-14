@@ -1,0 +1,131 @@
+.nlen--program-description {
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+
+    .nlen--container {
+        display: flex;
+        min-height: 50.3125rem;
+        max-width: var(--container-max-width-desktop, 80rem);
+        padding: var(--spacing-7xl, 4rem) var(--container-padding-desktop, 2rem);
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 4rem var(--spacing-7xl, 4rem);
+        align-self: stretch;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        >div {
+
+            display: flex;
+            min-width: var(--width-sm, 30rem);
+            max-width: var(--paragraph-max-width, 45rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-3xl, 1.5rem);
+            flex: 1 0 0;
+            width: 36.1rem;
+
+
+            h1 {
+                align-self: stretch;
+                color: var(--colors-text-text-brand-tertiary-600, #F34B05);
+                /* Display md/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+
+            p {
+                color: var(--colors-text-text-tertiary-600, #535862);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+            }
+
+            h2 {
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+                color: var(--colors-text-text-primary-900, #272018);
+                /* Display xs/Semibold */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-xs, 1.5rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-xs, 2rem);
+                /* 133.333% */
+                color: #272018;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                padding-top: var(--spacing-3xl, 1.5rem);
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-2xl, 1.25rem);
+                align-self: stretch;
+
+
+                li {
+                    position: relative;
+                    gap: var(--spacing-lg, 0.75rem);
+                    padding-left: 2.5rem;
+
+                    color: var(--colors-text-text-tertiary-600, #535862);
+
+                    /* Text lg/Regular */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-lg, 1.125rem);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: var(--Line-height-text-lg, 1.75rem);
+                    /* 155.556% */
+                
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-image: url(../svgs/icon-check-circle.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 1.75rem;
+                        height: 1.75rem;
+                    }
+                
+                }
+
+            }
+        }
+
+        >picture {
+            width: 35.875rem;
+            height: 38.6875rem;
+            background-color: #535862;
+            
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+
+}

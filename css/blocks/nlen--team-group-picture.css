@@ -1,0 +1,80 @@
+.nlen--group-picture {
+    background: var(--Color-Brand-white, #FFF);
+    padding-top: 3.62rem;
+    padding-bottom: 5rem;
+
+    .nlen--container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        flex-shrink: 0;
+
+        h2 {
+            color: var(--NLEN--RedOrange, #FF4B00);
+            text-align: center;
+
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        .subtitle {
+            color: var(--NLEN--text-color, #272018);
+            text-align: center;
+
+            /* Text xl/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-xl, 1.25rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-xl, 1.875rem);
+            /* 150% */
+        }
+
+        figure {
+            div {
+                width: 82rem;
+                height: 30.5rem;
+                flex-shrink: 0;
+                background-color: #ff00ff11;
+                position: relative;
+                overflow: hidden;
+                margin: 1.31rem 0;
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+
+            figcaption {
+                p {
+                    color: #535862;
+
+                    /* Text lg/Regular */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-lg, 1.125rem);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: var(--Line-height-text-lg, 1.75rem);
+                    /* 155.556% */
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,95 @@
+.nlen--sweet-beginnings-mission {
+    display: flex;
+    padding: 7rem 4rem 8.875rem 4rem;
+    flex-direction: column;
+    background: var(--NLEN-maroon, #6B140E);
+    color: var(--NLEN-tertiary-tan, #FFD19A);
+
+    .nlen--container {
+        align-items: center;
+        gap: 2.75rem;
+        flex-shrink: 0;
+        flex-direction: column;
+        text-align: center;
+
+        /* Text lg/Regular */
+        font-family: var(--Font-family-font-family-body, Onest);
+        font-size: var(--Font-size-text-lg, 1.125rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-height-text-lg, 1.75rem);
+
+        /* 155.556% */
+        .tagline {
+            color: var(--NLEN-secondaryTan, #FFEFD6);
+
+            /* Text md/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+        }
+
+        .main-icon {
+            width: 6.24988rem;
+            height: 6.37488rem;
+            flex-shrink: 0;
+            aspect-ratio: 100.00/102.00;
+        }
+
+        h2 {
+            color: var(--NLEN-tertiary-tan, var(--Color-Neutral-white, #FFD19A));
+            text-align: center;
+
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        .nlen--cards-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 3rem;
+            align-self: stretch;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                flex: 1 0 0;
+            }
+
+        }
+
+        .nlen--primary-button {
+            display: flex;
+            padding: 0.625rem 0.875rem;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-xs, 0.25rem);
+            width: 10.25rem;
+        }
+
+        .terciary-color {
+            border: 2px solid var(--NLEN-tertiary-tan, #FFD19A);
+            color: var(--NLEN-tertiary-tan, #FFD19A);
+            /* Shadows/shadow-xs-skeuomorphic */
+            box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+        }
+
+
+    }
+
+}

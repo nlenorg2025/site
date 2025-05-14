@@ -1,0 +1,50 @@
+.nlen--leadership-cta {
+    display: flex;
+    padding: 7rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: var(--NLEN-maroon, #6B140E);
+    
+    .nlen--container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        align-self: stretch;
+        max-width: 39.5625rem;
+        margin: auto;
+
+        h2 {
+            color: var(--Text-alternate, #FFF);
+            text-align: center;
+
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        p {
+            color: var(--Text-alternate, #FFF);
+            text-align: center;
+
+            /* Text lg/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+    }
+
+
+}

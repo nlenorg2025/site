@@ -1,0 +1,155 @@
+.nlen--heading-inner {
+    display: flex;
+    height: 27.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-7xl, 4rem);
+    align-self: stretch;
+    background-color: #FF4B00;
+
+    .heading--breadcrumbs {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs, 0.25rem);
+    }
+
+    .heading--container {
+        display: flex;
+        max-width: var(--container-max-width-desktop, 80rem);
+        padding: 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-lg, 0.75rem);
+        align-self: stretch;
+
+        .subheading {
+            color: var(--Colors-Text-text-secondary_on-brand, #FFD19A);
+            /* Text md/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+        }
+
+        .contents {
+            display: flex;
+            flex-direction: row;
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-4xl, 2rem);
+            align-self: stretch;
+
+            .title {
+                display: flex;
+                align-items: flex-start;
+                gap: 2.5rem;
+                align-self: stretch;
+                width: 38rem;
+                flex: 0 0 auto;
+
+
+                h1 {
+                    color: #FFF;
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: 2.9375rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 3rem;
+                    /* 102.128% */
+                    letter-spacing: 0.08813rem;
+                }
+
+            }
+
+            .supporting-text {
+                flex: 0 0 auto;
+                width: 38rem;
+                color: #FFF;
+
+                /* Display xs/Medium */
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-xs, 1.5rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-display-xs, 1.3333333);
+                /* 133.333% */
+            }
+
+        }
+
+    }
+
+}
+
+.nlen--breadcrumbs {
+    width: 100%;
+    display: block;
+    margin-bottom: 4rem;
+
+    p {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.25em;
+        justify-content: flex-start;
+        align-items: center ;
+
+        a {
+            color: var(--Colors-Text-text-primary_on-brand, #FFF);
+
+            /* Text lg/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+
+        .home-icon {
+            width: 1rem;
+            margin-right: 0.25rem;
+            height: 2.5rem;
+            display: inline-flex;
+            flex-direction: column;
+
+            svg {
+                width: 1.25rem;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        .chevron-right {
+            display: inline-block;
+            width: 1rem;
+            height: 2.5rem;
+            background-image: url(../svgs/chevron-right-white.svg);
+            background-repeat: no-repeat;
+            background-size: 1.5rem 1.5rem;
+            background-position: center;
+        }
+
+        .active-link {
+            display: flex;
+            padding: var(--spacing-xs, 0.25rem) var(--spacing-md, 0.5rem);
+            justify-content: center;
+            align-items: center;
+            border-radius: var(--spacing-sm, 0.375rem);
+            background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+            color: var(--Component-colors-Utility-Warning-utility-warning-700, #B54708);
+
+            /* Text lg/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+
+    }
+
+}
