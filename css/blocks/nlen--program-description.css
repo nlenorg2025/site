@@ -117,8 +117,7 @@
         >picture {
             width: 35.875rem;
             height: 38.6875rem;
-            background-color: #535862;
-            
+                        
             img {
                 object-fit: contain;
                 width: 100%;
