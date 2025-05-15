@@ -190,6 +190,8 @@ strong.thinner {
     text-decoration: none;
     cursor: pointer;
 
+    min-width: 12rem;
+
 }
 
 .nlen--primary-button:hover {

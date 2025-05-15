@@ -45,6 +45,7 @@
             flex: 0 0 auto;
             justify-content: space-around;
             width: 100%;
+            gap: 2rem;
 
             &>article {
                 width: 26rem;
@@ -54,8 +55,41 @@
                 gap: 2rem;
                 align-self: stretch;
                 min-height: 32.12rem;
-                background-color: #ffffff11;
-                gap: 2rem;
+                gap: 0;
+
+                picture {
+                    margin-bottom: 1.5rem;
+                }
+
+                h1 {
+                    color: var(--Color-Brand-white, #FFF);
+                    text-align: center;
+
+                    /* Display xs/Medium */
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: var(--Font-size-display-xs, 1.5rem);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: var(--Line-height-display-xs, 2rem);
+                    /* 133.333% */
+                    margin-bottom: 1.5rem;
+
+                }
+
+                p {
+                    color: #FFF;
+                    text-align: center;
+
+                    /* Text lg/Regular */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-lg, 1.125rem);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: var(--Line-height-text-lg, 1.75rem);
+                    /* 155.556% */
+                    margin-bottom: 2rem;
+                }
+
             }
 
         }
