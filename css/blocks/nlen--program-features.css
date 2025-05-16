@@ -103,7 +103,7 @@
 
     }
 
-    .nlen--container:last-of-type {
+    .nlen--container {
 
         .features {
             display: flex;

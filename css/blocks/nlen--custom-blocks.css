@@ -88,10 +88,109 @@
 
 .nlen--heading-inner.with-bg-image {
     height: 39.94rem;
+
+    .nlen--container {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading--container {
+        max-width: 48rem;
+
+        .title,
+        .contents,
+        .supporting-text {
+            width: 100%;
+        }
+
+        .contents {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-4xl, 2rem);
+            align-self: stretch;
+        }
+    }
+
+
+
 }
 
 .nlen--about-us--our-campus .nlen--heading-inner.with-bg-image {
     background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/about-us--our-campus/about-us--our-campus-header-bg.jpg) lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.nlen--program-description {
+    & .nlen--container {
+        &>div {
+            p.tagline.altern-tagline {
+                color: var(--Eyebrow-brown, #BD4A02);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+        }
+    }
+}
+
+.nlen--program-description.mission-impact {
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+
+    .nlen--container {
+        &>div {
+
+            .tagline {
+                color: var(--Eyebrow-brown, #BD4A02);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h1 {
+                color: var(--NLEN--RedOrange, #FF4B00);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 900;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        &>picture {
+
+            img {
+                margin-bottom: 1.31rem;
+            }
+            
+            p {
+                color: #000;
+
+                /* Text lg/Medium */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 500;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+            }
+        }
+    }
+
+
+
+
 }
