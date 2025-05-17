@@ -175,7 +175,7 @@
             img {
                 margin-bottom: 1.31rem;
             }
-            
+
             p {
                 color: #000;
 
@@ -189,8 +189,48 @@
             }
         }
     }
+}
 
+.nlen--program-description.mission-impact {
+    & .nlen--container {
+        gap: 6.41rem;
 
+        &>div {
+            & ul {
+                & li {
 
+                    padding-left: 3.5rem;
 
+                    &::before {
+                        display: none;
+                    }
+
+                    .icon {
+                        display: flex;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        padding: 0.52825rem 0.5rem 0.47175rem 0.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        aspect-ratio: 1/1;
+                        background-color: #F9DBAF;
+                        border-radius: 50%;
+
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+
+                        svg {
+                            width: 1.5rem;
+                            height: auto;
+                            object-fit: contain;
+                            display: block;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 }
