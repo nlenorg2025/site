@@ -68,7 +68,6 @@
             margin-top: 4rem;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 3rem;
 
             .card {
                 width: 25.3rem;
