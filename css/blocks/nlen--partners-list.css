@@ -1,0 +1,62 @@
+.nlen--partners-list {
+    padding: var(--spacing-8xl, 5rem) 4rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
+    border-radius: var(--radius-md, 0.5rem);
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+
+    .nlen--container {
+
+        h2 {
+            color: var(--NLEN--RedOrange, #FF4B00);
+            text-align: center;
+
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .nlen--partners-list--logos {
+            max-width: 70.5rem;
+            display: flex;
+            flex-direction: row;
+            column-gap: 3rem;
+            row-gap: 2rem;
+            flex: 0 0 auto;
+            flex-wrap: wrap;
+
+            picture {
+                width: 15.375rem;
+                height: 8.5rem;
+                flex-shrink: 0;
+                background: #FFF;
+                display: block;
+                flex-basis: auto;
+                position: relative;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                    display: block;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
+            }
+
+        }
+
+    }
+
+}
