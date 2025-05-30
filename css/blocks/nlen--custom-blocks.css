@@ -2947,3 +2947,269 @@
 
     }
 }
+
+/**/
+
+#our-network--partnerships-body {
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+    padding: 7rem;
+
+    .nlen--container {
+        gap: 2rem;
+
+        &>.tagline,
+        &>h2,
+        &>p {
+            width: 100%;
+            max-width: 45.5625rem;
+            margin: auto;
+        }
+
+        &>.tagline {
+            color: var(--Eyebrow-brown, #BD4A02);
+
+            /* Text md/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-md, 1rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-md, 1.5rem);
+            /* 150% */
+        }
+
+        &>h2 {
+            color: var(--NLEN--RedOrange, #FF4B00);
+            text-align: center;
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 900;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        &>p {
+            color: var(--NLEN--text-color, #272018);
+            text-align: center;
+
+            /* Text/Medium/Normal */
+            font-family: Roboto;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 1.6875rem */
+        }
+
+        &>div {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 0 0 auto;
+            gap: 2rem;
+
+            &>p {
+                align-self: stretch;
+                color: #000;
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+
+                [class*="button"] {
+                    width: fit-content;
+                }
+
+            }
+
+            &>ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                flex: 0 0 auto;
+                flex-wrap: wrap;
+
+                li {
+                    width: calc(50% - 2rem);
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 3rem;
+                    gap: 1rem;
+                    position: relative;
+                    color: var(--NLEN--text-color, #272018);
+
+                    /* Text/Regular/Normal */
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+
+                    /* 1.5rem */
+                    strong {
+                        color: var(--NLEN--text-color, #272018);
+
+                        /* Heading/Desktop/H6 */
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 140%;
+                        /* 1.75rem */
+                    }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.64 9.49335L27.4533 9.16002C27.2125 8.75694 26.8729 8.42193 26.4667 8.18669L17.52 3.02669C17.1149 2.79169 16.6551 2.66751 16.1867 2.66669H15.8C15.3316 2.66751 14.8717 2.79169 14.4667 3.02669L5.52 8.20002C5.11596 8.4337 4.78035 8.76931 4.54667 9.17335L4.36 9.50669C4.125 9.91181 4.00083 10.3717 4 10.84V21.1734C4.00083 21.6418 4.125 22.1016 4.36 22.5067L4.54667 22.84C4.78639 23.2393 5.12065 23.5736 5.52 23.8134L14.48 28.9733C14.8831 29.2132 15.3443 29.3377 15.8133 29.3333H16.1867C16.6551 29.3325 17.1149 29.2084 17.52 28.9733L26.4667 23.8C26.8747 23.5716 27.2116 23.2347 27.44 22.8267L27.64 22.4934C27.8721 22.0871 27.9961 21.628 28 21.16V10.8267C27.9992 10.3583 27.8751 9.89847 27.64 9.49335ZM15.8 5.33335H16.1867L24 9.84002L16 14.4534L8 9.84002L15.8 5.33335ZM17.3333 26L25.1333 21.4934L25.3333 21.16V12.1467L17.3333 16.7734V26Z" fill="%23272018"/></svg>');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+#our-network--partnerships-tabling-cta.nlen--program-opportunities {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../../img/our-network--partnerships/tabling-event.jpg) lightgray 50% / cover no-repeat;
+    height: 24.38rem;
+
+    .nlen--container {
+        .heading-and-support-text {
+            width: 38.5rem;
+
+            .eyebrow {
+                color: var(--NLEN-btnText-alt, #F9DBAF);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Color-White, #FFF);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            gap: 1.5rem;
+
+            >* {
+                align-self: stretch;
+                color: #ffffff;
+            }
+
+            >p {
+                color: var(--Color-Brand-white, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+
+                strong {
+                    font-weight: 600;
+                }
+
+                >a[class*="button"] {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
+
+#our-network--partnerships-host-event-cta.nlen--program-opportunities {
+    background: var(--NLEN--RedOrange, #FF4B00);
+    height: 24.38rem;
+
+    .nlen--container {
+        .heading-and-support-text {
+            width: 38.5rem;
+
+            .eyebrow {
+                color: var(--NLEN-btnText-alt, #F9DBAF);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Color-White, #FFF);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            gap: 1.5rem;
+
+            >* {
+                align-self: stretch;
+                color: #ffffff;
+            }
+
+            >p {
+                color: var(--Color-Brand-white, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+
+                strong {
+                    font-weight: 600;
+                }
+
+                >a[class*="button"] {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
