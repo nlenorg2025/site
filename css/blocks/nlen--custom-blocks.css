@@ -2502,3 +2502,142 @@
     }
 
 }
+
+/* Services --- Job tools page */
+
+
+#services--job-tools-heading.nlen--heading-inner.with-bg-image {
+    background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/services--job-tools/heading-image.jpg) lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#services--workshops-that-work.nlen--program-opportunities {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../../img/services--job-tools/workshops-that-work.jpg) lightgray 50% / cover no-repeat;
+
+    .nlen--container {
+        .heading-and-support-text {
+            .eyebrow {
+                color: var(--NLEN-btnText-alt, #F9DBAF);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Color-White, #FFF);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            >* {
+                align-self: stretch;
+                color: #ffffff;
+            }
+
+            >p {
+                color: var(--Color-Brand-white, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+
+                strong {
+                    font-weight: 600;
+                }
+
+                >a[class*="button"] {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+    Get Involved --- Join Us 
+*/ 
+
+#get-involved--join-us--heading.nlen--heading-inner.with-bg-image {
+    background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/get-involved--join-us/heading-image.jpg) lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#get-involved--team-building-experiences.nlen--program-opportunities {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../../img/get-involved--join-us/team-building.jpg) lightgray 50% / cover no-repeat;
+
+    .nlen--container {
+        .heading-and-support-text {
+            .eyebrow {
+                color: var(--NLEN-btnText-alt, #F9DBAF);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Color-White, #FFF);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            gap: 1.5rem;
+
+            >* {
+                align-self: stretch;
+                color: #ffffff;
+            }
+
+            >p {
+                color: var(--Color-Brand-white, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+
+                strong {
+                    font-weight: 600;
+                }
+
+                >a[class*="button"] {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
