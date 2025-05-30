@@ -37,8 +37,17 @@ li {
 }
 
 a {
-    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-lg, 1.75rem);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
     transition: 0.25s ease-in all;
+    color: inherit;
 }
 
 a,
@@ -73,7 +82,7 @@ p strong {
 
 strong.thinner {
     font-weight: 500;
-} 
+}
 
 @media only screen and (max-width: 659px),
 (orientation: portrait) {
@@ -282,7 +291,7 @@ ol.steps {
 
         &::before {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             content: 'Step ' counter(step) '.';
         }
@@ -450,6 +459,7 @@ MEGAMENU
 
 .nlen--nav-item-list a {
     transition: 0.25s ease-in-out all;
+    text-decoration: none;
 }
 
 .nlen--nav-item-list a:hover,
@@ -1221,6 +1231,7 @@ Logos
     font-style: normal;
     font-weight: 600;
     transition: 0.25 ease-in-out all;
+    text-decoration: none;
 }
 
 .nlen--footer-links-list a:hover {
@@ -1305,7 +1316,7 @@ Postfooter
         transition: 0.25s ease-in all;
         flex-direction: column;
         justify-content: center;
-    
+
         span {
             text-indent: -999999px;
             font-size: 0;
@@ -1317,13 +1328,13 @@ Postfooter
         &:hover svg * {
             fill: #FF4B00;
         }
-    
+
         &::after {
             display: none;
         }
 
     }
-    
+
 }
 
 /**/
@@ -3199,23 +3210,23 @@ Alumni sucess
             /* 150% */
 
 
-        a {
-            color: var(--colors-text-text-primary-900, #272018);
+            a {
+                color: var(--colors-text-text-primary-900, #272018);
 
-            /* Text xl/Semibold */
-            font-family: var(--Font-family-font-family-body, Onest);
-            font-size: var(--Font-size-text-xl, 1.25rem);
-            font-style: normal;
-            font-weight: 600;
-            line-height: var(--Line-height-text-xl, 1.875rem);
-            /* 150% */
-            text-decoration-line: underline;
-            text-decoration-style: solid;
-            text-decoration-skip-ink: none;
-            text-decoration-thickness: auto;
-            text-underline-offset: auto;
-            text-underline-position: from-font;
-        }
+                /* Text xl/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-xl, 1.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-xl, 1.875rem);
+                /* 150% */
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: none;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
         }
 
 
@@ -3776,7 +3787,9 @@ ul.other-ways-list {
 
 }
 
-.nlen--primary-button, .nlen--secondary-button, .nlen--terciary-button {
+.nlen--primary-button,
+.nlen--secondary-button,
+.nlen--terciary-button {
     span {
         width: fit-content;
         margin: 0 2rem 0 0;

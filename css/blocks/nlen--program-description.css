@@ -30,12 +30,11 @@
 
             h1 {
                 align-self: stretch;
-                color: var(--colors-text-text-brand-tertiary-600, #F34B05);
-                /* Display md/Semibold */
+                color: var(--NLEN--RedOrange, #FF4B00);
                 font-family: var(--Font-family-font-family-display, Onest);
                 font-size: var(--Font-size-display-md, 2.25rem);
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 900;
                 line-height: var(--Line-height-display-md, 2.75rem);
                 /* 122.222% */
                 letter-spacing: -0.045rem;
@@ -93,7 +92,7 @@
                     font-weight: 400;
                     line-height: var(--Line-height-text-lg, 1.75rem);
                     /* 155.556% */
-                
+
                     &::before {
                         content: '';
                         display: block;
@@ -107,7 +106,7 @@
                         width: 1.75rem;
                         height: 1.75rem;
                     }
-                
+
                 }
 
             }
@@ -116,13 +115,19 @@
         >picture {
             width: 35.875rem;
             height: 38.6875rem;
-                        
+
             img {
                 object-fit: contain;
                 width: 100%;
                 height: auto;
             }
+        }
 
+        .footnote {
+            align-self: stretch;
+            width: 100% !important;
+            max-width: unset !important;
+            padding-right: 30rem;
         }
     }
 

@@ -106,6 +106,8 @@
             font-weight: 600;
             line-height: var(--Line-height-text-lg, 1.75rem);
             /* 155.556% */
+
+            text-decoration: none;
         }
 
         .home-icon {
