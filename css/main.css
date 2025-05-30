@@ -115,9 +115,13 @@ strong.thinner {
 .nlen--terciary-button {
     transition: 0.25s ease-in-out all;
     cursor: pointer;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-color: transparent;
 
     span {
         transition: 0.25s ease-in-out all;
+        text-decoration: none;
     }
 
     .has-arrow::after {

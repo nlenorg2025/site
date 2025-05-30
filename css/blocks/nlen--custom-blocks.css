@@ -2687,3 +2687,263 @@
     }
 
 }
+
+/**/
+
+#press-media--reach-out {
+    height: unset;
+    background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+
+    .nlen--container {
+        &>h2 {
+            max-width: 50rem;
+            color: var(--NLEN--RedOrange, #FF4B00);
+            text-align: center;
+
+            /* Display sm/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-sm, 1.875rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-sm, 2.375rem);
+            /* 126.667% */
+        }
+
+        &>p {
+            color: var(--Color-Brand-black, #000);
+            text-align: center;
+
+            /* Text lg/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            gap: 4.375rem;
+            flex-direction: row;
+
+            .card {
+                display: flex;
+                width: 24rem;
+                height: 20.25rem;
+                gap: 0.5rem;
+                flex-direction: column;
+                padding: var(--spacing-4xl, 2rem) var(--spacing-4xl, 2rem) 0rem var(--spacing-4xl, 2rem);
+
+                align-items: center;
+                border: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
+                background: var(--Colors-Background-bg-primary, #FFF);
+
+                /* Shadows/shadow-lg */
+                box-shadow: 0px 12px 16px -4px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)), 0px 4px 6px -2px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)), 0px 2px 2px -1px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
+
+                .icon {
+                    width: 3rem;
+                    height: 3rem;
+                    flex-shrink: 0;
+                    background-color: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+                    border-radius: 6rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    svg {}
+                }
+
+                h3 {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    color: var(--Color-Neutral-black, #000);
+                    text-align: center;
+
+                    /* Text lg/Regular */
+                    font-family: var(--Font-family-font-family-body, Onest);
+                    font-size: var(--Font-size-text-lg, 1.125rem);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: var(--Line-height-text-lg, 1.75rem);
+
+                    /* 155.556% */
+                    a:not([class*="button"]) {
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+#press-media--founder-cta {
+    background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/about-us--press-media/founder-cta.jpg) lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 29.88rem;
+
+    .nlen--container {
+        &>* {
+            color: var(--Color-Brand-white, #FFF);
+            max-width: 48rem;
+        }
+
+        &>h2 {
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        &>h3 {
+            text-align: left;
+            /* Text xl/Semibold */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-xl, 1.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-text-xl, 1.875rem);
+            /* 150% */
+        }
+
+        a[class*="button"] {
+            width: fit-content;
+        }
+
+    }
+}
+
+
+#about-us--press-media--our-events-cta.nlen--program-opportunities {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../../img/about-us--press-media/events-cta.jpg) lightgray 50% / cover no-repeat;
+    height: 24.38rem;
+
+    .nlen--container {
+        .heading-and-support-text {
+            .eyebrow {
+                color: var(--NLEN-btnText-alt, #F9DBAF);
+
+                /* Text md/Semibold */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            h2 {
+                color: var(--Color-White, #FFF);
+                font-family: var(--Font-family-font-family-display, Onest);
+                font-size: var(--Font-size-display-md, 2.25rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: var(--Line-height-display-md, 2.75rem);
+                /* 122.222% */
+                letter-spacing: -0.045rem;
+            }
+        }
+
+        .content {
+            gap: 1.5rem;
+
+            >* {
+                align-self: stretch;
+                color: #ffffff;
+            }
+
+            >p {
+                color: var(--Color-Brand-white, #FFF);
+
+                /* Text lg/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-lg, 1.125rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-lg, 1.75rem);
+                /* 155.556% */
+
+                strong {
+                    font-weight: 600;
+                }
+
+                >a[class*="button"] {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
+
+.press--media--blog-entries {
+    padding: 7rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    .nlen--container {
+        gap: 1.5rem;
+
+        &>h2 {
+            color: var(--Color-Scheme-1-Text, #000);
+            text-align: center;
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 900;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        &>p {
+            color: var(--Color-Scheme-1-Text, #000);
+            text-align: center;
+
+            /* Text/Medium/Normal */
+            font-family: Roboto;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 1.6875rem */
+        }
+
+        &>.blog-entries {
+            margin: 2.5rem 0;
+            border: 1px solid #ff00ff22;
+            min-height: 10rem;
+            width: 100%;
+        }
+
+    }
+}
