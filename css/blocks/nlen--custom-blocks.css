@@ -2797,8 +2797,23 @@
     margin: 0;
     display: flex;
     flex-direction: row;
-    gap: 1rem
+
+    gap: 1rem;
+
+    li {
+        display: block;
+
+        a {
+            display: block;
+        }
+
+        a:hover {
+            svg {}
+        }
+    }
+
 }
+
 
 #press-media--founder-cta {
     background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/about-us--press-media/founder-cta.jpg) lightgray 50% / cover no-repeat;
@@ -3071,7 +3086,7 @@
                         width: 2rem;
                         height: 2rem;
                         position: absolute;
-                        top:0;
+                        top: 0;
                         left: 0;
                         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.64 9.49335L27.4533 9.16002C27.2125 8.75694 26.8729 8.42193 26.4667 8.18669L17.52 3.02669C17.1149 2.79169 16.6551 2.66751 16.1867 2.66669H15.8C15.3316 2.66751 14.8717 2.79169 14.4667 3.02669L5.52 8.20002C5.11596 8.4337 4.78035 8.76931 4.54667 9.17335L4.36 9.50669C4.125 9.91181 4.00083 10.3717 4 10.84V21.1734C4.00083 21.6418 4.125 22.1016 4.36 22.5067L4.54667 22.84C4.78639 23.2393 5.12065 23.5736 5.52 23.8134L14.48 28.9733C14.8831 29.2132 15.3443 29.3377 15.8133 29.3333H16.1867C16.6551 29.3325 17.1149 29.2084 17.52 28.9733L26.4667 23.8C26.8747 23.5716 27.2116 23.2347 27.44 22.8267L27.64 22.4934C27.8721 22.0871 27.9961 21.628 28 21.16V10.8267C27.9992 10.3583 27.8751 9.89847 27.64 9.49335ZM15.8 5.33335H16.1867L24 9.84002L16 14.4534L8 9.84002L15.8 5.33335ZM17.3333 26L25.1333 21.4934L25.3333 21.16V12.1467L17.3333 16.7734V26Z" fill="%23272018"/></svg>');
                         background-repeat: no-repeat;
@@ -3212,4 +3227,197 @@
         }
     }
 
+}
+
+/*Get involved -- Contact us */
+
+#get-involved--contact-information {
+
+    .nlen--container {
+        padding-bottom: 5rem;
+
+        .contact-information {
+            display: flex;
+            padding: 3.5rem 2.5rem 4rem 2.5rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+            margin: auto;
+            width: 59.3rem;
+            flex: 0 0 auto;
+
+            .heading {
+                margin-top: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                &>h1 {
+                    color: var(--NLEN--RedOrange, #FF4B00);
+                    text-align: center;
+
+                    /* NLEN-H1 */
+                    font-family: Onest;
+                    font-size: 2.9375rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 120%;
+                    /* 3.525rem */
+                }
+
+                &>p {
+                    color: var(--Color-Scheme-1-Text, #000);
+                    text-align: center;
+
+                    /* Display xs/Medium */
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: var(--Font-size-display-xs, 1.5rem);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: var(--Line-height-display-xs, 2rem);
+                    /* 133.333% */
+                    max-width: 48rem;
+                }
+            }
+
+            .cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 6.25rem;
+                row-gap: 5rem;
+                flex: 0 0 auto;
+                flex-wrap: wrap;
+
+                .card {
+                    display: flex;
+                    height: 20rem;
+                    width: 24rem;
+                    flex-direction: column;
+                    padding-bottom: 5.25rem;
+                    padding-top: 2rem;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    border: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
+                    background: var(--Colors-Background-bg-primary, #FFF);
+
+                    /* Shadows/shadow-lg */
+                    box-shadow: 0px 12px 16px -4px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)), 0px 4px 6px -2px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)), 0px 2px 2px -1px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
+
+                    .icon {
+                        width: 3rem;
+                        height: 3rem;
+                        flex-shrink: 0;
+                        background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 625rem;
+                        margin-bottom: 2rem;
+
+                        &>svg {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            aspect-ratio: 1/1;
+                        }
+
+
+
+                    }
+
+                    p {
+                        color: var(--Color-Scheme-1-Text, #000);
+                        text-align: center;
+                        font-family: var(--Font-family-font-family-body, Onest);
+                        font-size: var(--Font-size-text-lg, 1.125rem);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1rem;
+                        /* 88.889% */
+                    }
+
+                    p:first-of-type {
+                        color: var(--colors-text-text-primary-900, #272018);
+                        text-align: center;
+
+                        /* Text xl/Semibold */
+                        font-family: var(--Font-family-font-family-body, Onest);
+                        font-size: var(--Font-size-text-xl, 1.25rem);
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: var(--Line-height-text-xl, 1.875rem);
+                        /* 150% */
+
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/**/
+
+#stay-connected {
+    display: flex;
+    padding: 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    flex-shrink: 0;
+    border: 1px solid #E9EAEB;
+    background: var(--Color-Scheme-1-Background, #FFF);
+    width: 54.5rem;
+    align-self: stretch;
+    margin: auto;
+
+    /* Shadows/shadow-lg */
+    box-shadow: 0px 12px 16px -4px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)), 0px 4px 6px -2px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)), 0px 2px 2px -1px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
+
+    &>div,
+    &>form {
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &>div {
+        h2 {
+            color: var(--NLEN--RedOrange, #FF4B00);
+            text-align: center;
+
+            /* Display md/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-md, 2.25rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-md, 2.75rem);
+            /* 122.222% */
+            letter-spacing: -0.045rem;
+        }
+
+        p {
+            color: var(--Color-Scheme-1-Text, #000);
+            text-align: center;
+
+            /* Text lg/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+    }
+
+    &>form {
+        width: 100%;
+        padding-bottom: 50rem;
+        background-color:#ff00ff22;
+    }
 }

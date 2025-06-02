@@ -134,6 +134,10 @@
             background-position: center;
         }
 
+        .chevron-right.orange {
+            background-image: url(../svgs/chevron-right.svg);
+        }
+
         .active-link {
             display: flex;
             padding: var(--spacing-xs, 0.25rem) var(--spacing-md, 0.5rem);
