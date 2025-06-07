@@ -340,19 +340,30 @@
     }
 }
 
+
+#nlen--partnership-environment {
+    .nlen--container {
+        p {
+            color: #000000;
+        }
+    }
+}
+
 .nlen--sustainable-partners-list {
     display: flex;
     padding: 0.5rem 0rem;
     align-items: flex-start;
-    gap: 1.5rem;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
     align-self: stretch;
     flex: 0 0 auto;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 
     picture {
         display: flex;
         width: 18.5rem;
-        height: 8.38181rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
@@ -2300,6 +2311,8 @@
                     height: 8.5rem;
                     flex-shrink: 0;
                     background-color: #ffffff;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 li.spacer {
@@ -2403,7 +2416,8 @@
 
                     li {
                         color: var(--NLEN--text-color, #272018);
-
+                        border-left: var(--Stroke-Divider-Width, 1px) solid var(--NLEN--RedOrange, #FF4B00);
+                        padding-left: 2rem;
                         /* Text lg/Regular */
                         font-family: var(--Font-family-font-family-body, Onest);
                         font-size: var(--Font-size-text-lg, 1.125rem);
