@@ -421,10 +421,23 @@ Graduates
     .nlen--container {
         #graduate-stories-carousel {
             width: 90rem;
+            padding-bottom: 4rem;
 
             .splide__slide {
                 width: 24.375rem !important;
-                margin-right: 2rem;
+            }
+
+            .splide__pagination {
+                padding: 0;
+                width: 50%;
+                justify-content: flex-start;
+            }
+
+            .splide__arrows {
+                position: absolute;
+                bottom: 0.5rem;
+                right: 0;
+                width: 6.5rem;
             }
 
             .graduate-story-card {

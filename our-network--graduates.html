@@ -1177,16 +1177,19 @@
             </div>
         </section>
         <script>
+            var graduatesCarousel;
             document.addEventListener('DOMContentLoaded', function () {
-                new Splide('#graduate-stories-carousel',
+                graduatesCarousel = new Splide('#graduate-stories-carousel',
                     {
-                        focus: 'center',
                         type: 'loop',
                         perPage: 5,
+                        perMove: 1,
                         arrows: true,
                         pagination: true,
+                        gap: '2rem'
                     }
-                ).mount();
+                );
+                graduatesCarousel.mount();
             });
         </script>
         <!-- donation cta -->
