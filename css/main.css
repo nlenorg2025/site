@@ -12,7 +12,8 @@
 
 @media only screen and (orientation: landscape) {
     :root {
-        font-size: clamp(10px, 1.11111111vw, 16px);
+        /* font-size: clamp(10px, 1.11111111vw, 16px);*/
+        font-size: 1.111111111vw; /* 16px @ 1440px */
     }
 }
 

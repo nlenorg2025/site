@@ -440,6 +440,19 @@ Graduates
                 width: 6.5rem;
             }
 
+            .splide__arrow {
+                background-color: #fff;
+            }
+            .splide__pagination__page.is-active {
+                background: #000000;
+                transform: scale(1.1);
+                z-index: 1;
+            }
+
+            .splide__pagination__page {
+                background: #00000022;
+            }
+
             .graduate-story-card {
                 display: flex;
                 width: 24.375rem;

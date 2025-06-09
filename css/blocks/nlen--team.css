@@ -8,8 +8,7 @@
     background: var(--NLEN-secondaryTanAccessible, #FDF3E2);
 
     .nlen--container {
-        padding-left: 0;
-        padding-right: 0;
+
 
         .nlen--team-tabs-nav {
             width: 100%;
