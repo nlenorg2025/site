@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./vendor/hamburger.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/blocks/nlen--custom-blocks.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
@@ -461,7 +462,7 @@
                                             <dd>Giving back and doing good</dd>
                                         </a>
                                         <!-- Attend an Event -->
-                                        <a href="https://www.nlen.org/events">
+                                        <a href="./get-involved--attend-an-event.html">
                                             <dt>
                                                 <span class="nlen--nav-icon">
                                                     <img src="./img/svgs/attend-an-event.svg">
@@ -710,7 +711,7 @@
                         <p>We are here to support recruitment, screening and hiring needs, as well as
                             provide constructive performance feedback to our clients while they are
                             working for our employer partners.</p>
-                        <p><a class="nlen--nav-link-2" href="https://www.nlen.org/events">LEARN
+                        <p><a class="nlen--nav-link-2" href="./get-involved--attend-an-event.html">LEARN
                                 MORE<span class="has-arrow wine"></span></a></p>
                     </article>
                 </footer>
@@ -870,7 +871,7 @@
                         <dd>Giving back and doing good</dd>
                     </a>
                     <!-- Attend an Event -->
-                    <a href="https://www.nlen.org/events">
+                    <a href="./get-involved--attend-an-event.html">
                         <dt>
                             <span class="nlen--nav-icon">
                                 <img src="https://new.nlen.org/img/svgs/attend-an-event.svg">
@@ -1132,7 +1133,7 @@
                         <h3>Information Sessions</h3>
                         <p>Attend one of our information sessions to learn more about our programs and services leading
                             to long-term personal, professional, and financial empowerment.</p>
-                        <ul>
+                        <ul id="infosessions-list">
                             <li>
                                 <b class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
@@ -1158,8 +1159,24 @@
                                     </svg>
                                 </b>
                                 <p>When?</p>
-                                <p>Mondays at 10 a.m.</p>
-                                <p>Thursdays at 12 p.m.</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#FFF7ED" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0964 7.39016L9.93638 14.3002L8.03638 12.2702C7.68638 11.9402 7.13638 11.9202 6.73638 12.2002C6.34638 12.4902 6.23638 13.0002 6.47638 13.4102L8.72638 17.0702C8.94638 17.4102 9.32638 17.6202 9.75638 17.6202C10.1664 17.6202 10.5564 17.4102 10.7764 17.0702C11.1364 16.6002 18.0064 8.41016 18.0064 8.41016C18.9064 7.49016 17.8164 6.68016 17.0964 7.38016V7.39016Z"
+                                            fill="#FF4B00" />
+                                    </svg> Mondays at 10 a.m.</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#FFF7ED" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0964 7.39016L9.93638 14.3002L8.03638 12.2702C7.68638 11.9402 7.13638 11.9202 6.73638 12.2002C6.34638 12.4902 6.23638 13.0002 6.47638 13.4102L8.72638 17.0702C8.94638 17.4102 9.32638 17.6202 9.75638 17.6202C10.1664 17.6202 10.5564 17.4102 10.7764 17.0702C11.1364 16.6002 18.0064 8.41016 18.0064 8.41016C18.9064 7.49016 17.8164 6.68016 17.0964 7.38016V7.39016Z"
+                                            fill="#FF4B00" />
+                                    </svg> Thursdays at 12 p.m.</p>
                             </li>
 
                             <li>
@@ -1190,14 +1207,38 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </b>
-                                <p>When?</p>
-                                <p>Birth certificate</p>
-                                <p>Social security card</p>
-                                <p>Illinois-issued State ID</p>
+                                <p>What to bring?</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#FFF7ED" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0964 7.39016L9.93638 14.3002L8.03638 12.2702C7.68638 11.9402 7.13638 11.9202 6.73638 12.2002C6.34638 12.4902 6.23638 13.0002 6.47638 13.4102L8.72638 17.0702C8.94638 17.4102 9.32638 17.6202 9.75638 17.6202C10.1664 17.6202 10.5564 17.4102 10.7764 17.0702C11.1364 16.6002 18.0064 8.41016 18.0064 8.41016C18.9064 7.49016 17.8164 6.68016 17.0964 7.38016V7.39016Z"
+                                            fill="#FF4B00" />
+                                    </svg> Birth certificate</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#FFF7ED" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0964 7.39016L9.93638 14.3002L8.03638 12.2702C7.68638 11.9402 7.13638 11.9202 6.73638 12.2002C6.34638 12.4902 6.23638 13.0002 6.47638 13.4102L8.72638 17.0702C8.94638 17.4102 9.32638 17.6202 9.75638 17.6202C10.1664 17.6202 10.5564 17.4102 10.7764 17.0702C11.1364 16.6002 18.0064 8.41016 18.0064 8.41016C18.9064 7.49016 17.8164 6.68016 17.0964 7.38016V7.39016Z"
+                                            fill="#FF4B00" />
+                                    </svg> Social security card</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                            fill="#FFF7ED" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0964 7.39016L9.93638 14.3002L8.03638 12.2702C7.68638 11.9402 7.13638 11.9202 6.73638 12.2002C6.34638 12.4902 6.23638 13.0002 6.47638 13.4102L8.72638 17.0702C8.94638 17.4102 9.32638 17.6202 9.75638 17.6202C10.1664 17.6202 10.5564 17.4102 10.7764 17.0702C11.1364 16.6002 18.0064 8.41016 18.0064 8.41016C18.9064 7.49016 17.8164 6.68016 17.0964 7.38016V7.39016Z"
+                                            fill="#FF4B00" />
+                                    </svg> Illinois-issued State ID</p>
                             </li>
 
                         </ul>
-                        <h3>See you soon!</h3>
+                        <h4>See you soon!</h4>
                         <p>There’s no need to RSVP for an information session. Just show up!</p>
                     </div>
                 </div>
@@ -1217,7 +1258,7 @@
                         support returning citizens, and close the racial wealth gap — one job at a time.</p>
                     <p>If you’re passionate about social impact, equity, and economic empowerment, you’ll feel right at
                         home here.</p>
-                    <p><a class="nlen--secondary-button">
+                    <p><a class="nlen--secondary-button" href="./get-involved--careers.html">
                             <span class="has-arrow black">
                                 Browse open positions
                             </span>

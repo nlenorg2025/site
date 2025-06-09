@@ -443,6 +443,7 @@ Graduates
             .splide__arrow {
                 background-color: #fff;
             }
+
             .splide__pagination__page.is-active {
                 background: #000000;
                 transform: scale(1.1);
@@ -4049,4 +4050,136 @@ Thanks
             }
         }
     }
+}
+
+/**/
+
+.nlen--infosessions {
+    gap: 1.5rem;
+
+    &>h3 {
+        color: var(--colors-text-text-brand-tertiary-600, #F34B05);
+
+        /* Text xl/Semibold */
+        font-family: var(--Font-family-font-family-body, Onest);
+        font-size: var(--Font-size-text-xl, 1.25rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--Line-height-text-xl, 1.875rem);
+        /* 150% */
+        margin-bottom: 1.45rem;
+    }
+
+    &>p {
+        color: var(--colors-text-text-tertiary-600, #535862);
+
+        /* Text lg/Regular */
+        font-family: var(--Font-family-font-family-body, Onest);
+        font-size: var(--Font-size-text-lg, 1.125rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-height-text-lg, 1.75rem);
+        /* 155.556% */
+        max-width: 48rem;
+    }
+
+    &>h4 {
+        color: var(--NLEN--RedOrange, #FF4B00);
+
+        /* Display xs/Semibold */
+        font-family: var(--Font-family-font-family-display, Onest);
+        font-size: var(--Font-size-display-xs, 1.5rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--Line-height-display-xs, 2rem);
+        /* 133.333% */
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &>p:last-of-type {
+        color: var(--Color-Neutral-black, #000);
+
+        /* Text xl/Regular */
+        font-family: var(--Font-family-font-family-body, Onest);
+        font-size: var(--Font-size-text-xl, 1.25rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-height-text-xl, 1.875rem);
+        margin-left: 3rem;
+    }
+}
+
+#infosessions-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+    li {
+        display: flex;
+        width: 26.5625rem;
+        height: 19rem;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
+        background: var(--Colors-Background-bg-primary, #FFF);
+        padding: var(--spacing-4xl, 2rem) var(--spacing-4xl, 2rem) 0rem var(--spacing-4xl, 2rem);
+
+        /* Shadows/shadow-lg */
+        box-shadow: 0px 12px 16px -4px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)), 0px 4px 6px -2px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)), 0px 2px 2px -1px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
+        gap: var(--spacing-lg, 0.75rem);
+        align-self: stretch;
+
+        .icon {
+            display: flex;
+            width: 3rem;
+            height: 3rem;
+            padding: 0.75rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: var(--radius-full, 624.9375rem);
+            background: #FFEFD6;
+            position: relative;
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                aspect-ratio: 1/1;
+                position: absolute;
+                left: 0.78125rem;
+                top: 0.75rem;
+            }
+        }
+
+        p:first-of-type {
+            color: var(--colors-text-text-primary-900, #272018);
+
+            /* Display sm/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-sm, 1.875rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-sm, 2.375rem);
+            /* 126.667% */
+        }
+
+        p:not(:first-of-type) {
+            color: var(--colors-text-text-tertiary-600, #535862);
+
+            /* Text lg/Regular */
+            font-family: var(--Font-family-font-family-body, Onest);
+            font-size: var(--Font-size-text-lg, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--Line-height-text-lg, 1.75rem);
+            /* 155.556% */
+        }
+
+    }
+
 }
