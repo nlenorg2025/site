@@ -3734,8 +3734,36 @@ Graduates
 
     &>form {
         width: 100%;
-        padding-bottom: 50rem;
-        background-color: #ff00ff22;
+        max-width: 35rem;
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        p {
+            flex-grow: 1;
+            input[type="text"],
+            textarea,
+            input[type="email"],
+            input[type="tel"] {
+                width: 100%;
+            }
+
+            label {
+                display: inline-block;
+                width: 100%;
+            }
+
+            label:has(input[type="radio"]) {
+                width:50%;
+            }
+        }
+
+        
+
+        .full-width {
+            width: 100%;
+        }
     }
 }
 
@@ -4095,6 +4123,7 @@ Thanks
         /* 133.333% */
         margin-left: 3rem;
         margin-bottom: 3rem;
+
     }
 
     &>p:last-of-type {
@@ -4182,4 +4211,112 @@ Thanks
 
     }
 
+}
+
+/**/
+
+.show-modal {
+    font-variant: small-caps;
+    line-height: 1.25;
+    text-decoration: none;
+    display: inline-flex;
+    margin-left: 0.5em;
+    font-size: 0.825rem;
+    border-radius: 0.4rem;
+    background-color: #d4d4d4;
+    padding: 0 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e4e4e4;
+    }
+
+}
+
+
+
+#nlen--dialog {
+    width: 78.1875rem;
+    height: 35.4375rem;
+    flex-shrink: 0;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    opacity: 0;
+    scale: .5;
+    transition: opacity .3s ease, scale .3s ease;
+    pointer-events: none;
+
+    &[open] {
+        pointer-events: auto;
+    }
+
+    &.show {
+        opacity: 1;
+        scale: 1;
+    }
+
+    .nlen--dialog-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 2.5rem 4rem;
+
+        figure {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 auto;
+            gap: 3.5rem;
+
+            .profile-picture {
+                width: 30.4375rem;
+                height: 30.4375rem;
+                flex-shrink: 0;
+                background-color: #ff4b0011;
+            }
+
+            figcaption {
+                display: flex;
+                width: 36.375rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                background-color: #ff4b0011;
+
+            }
+        }
+
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+        opacity: 0.55;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+#nlen--dialog::backdrop {
+    background-color: rgba(129, 126, 126, 0.80);
+    width: 100%;
+    height: 100%;
 }
