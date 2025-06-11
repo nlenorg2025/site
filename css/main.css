@@ -406,7 +406,7 @@ input[type="checkbox"]:checked::after {
     border-radius: 0;
 }
 
-[type="submit"] {
+[type="submit"]:not(#subs-form-submit) {
     display: flex;
     padding: 0.75rem 1.5rem;
     justify-content: center;

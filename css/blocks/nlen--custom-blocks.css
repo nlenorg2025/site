@@ -2332,8 +2332,6 @@ Graduates
     flex-direction: column;
 
     .nlen--container {
-        padding-left: 0;
-        padding-right: 0;
 
         .eyebrow {
             color: var(--Eyebrow-brown, #BD4A02);
@@ -4289,7 +4287,6 @@ Thanks
                 width: 30.4375rem;
                 height: 30.4375rem;
                 flex-shrink: 0;
-                background-color: #ff4b0011;
 
                 img {
                     display: block;
@@ -4305,7 +4302,6 @@ Thanks
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1.5rem;
-                background-color: #ff4b0011;
 
                 h2 {
                     align-self: stretch;
