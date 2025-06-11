@@ -373,29 +373,56 @@ input[type="radio"] {
     background-color: transparent;
 
     &:checked::after {
-        content:'';
+        content: '';
         display: block;
-        width:0.675rem;
+        width: 0.675rem;
         height: 0.675rem;
-        background-color: #000000;
         position: absolute;
-        top:50%;
+        top: 50%;
         left: 50%;
-        transform:translate(-50%,-50%);
-        border-radius: 625rem;
+        transform: translate(-50%, -50%);
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path fill-rule="nonzero" d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.31 512 185.31 512 256c0 70.69-28.66 134.69-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0z"/></svg>');
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
     }
+}
+
+input[type="checkbox"] {
+    border-radius: 0;
 }
 
 input[type="checkbox"]:checked::after {
     height: 0.725rem;
     height: 0.725rem;
-    content:'';
+    content: '';
     background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.877px" height="101.052px" viewBox="0 0 122.877 101.052" enable-background="new 0 0 122.877 101.052" xml:space="preserve"><g><path d="M4.43,63.63c-2.869-2.755-4.352-6.42-4.427-10.11c-0.074-3.689,1.261-7.412,4.015-10.281 c2.752-2.867,6.417-4.351,10.106-4.425c3.691-0.076,7.412,1.255,10.283,4.012l24.787,23.851L98.543,3.989l1.768,1.349l-1.77-1.355 c0.141-0.183,0.301-0.339,0.479-0.466c2.936-2.543,6.621-3.691,10.223-3.495V0.018l0.176,0.016c3.623,0.24,7.162,1.85,9.775,4.766 c2.658,2.965,3.863,6.731,3.662,10.412h0.004l-0.016,0.176c-0.236,3.558-1.791,7.035-4.609,9.632l-59.224,72.09l0.004,0.004 c-0.111,0.141-0.236,0.262-0.372,0.368c-2.773,2.435-6.275,3.629-9.757,3.569c-3.511-0.061-7.015-1.396-9.741-4.016L4.43,63.63 L4.43,63.63z"/></g></svg>');
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 0;
+}
+
+[type="submit"] {
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid var(--NLEN--RedOrange, #FF4B00);
+    background: var(--NLEN--RedOrange, #FF4B00);
+    color: var(--Color-Neutral-white, #FFF);
+
+    /* Text xl/Semibold */
+    font-family: var(--Font-family-font-family-body, Onest);
+    font-size: var(--Font-size-text-xl, 1.25rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-xl, 1.875rem);
+    /* 150% */
 }
 
 /**/
@@ -628,6 +655,7 @@ MEGAMENU
     line-height: var(--Line-height-text-sm, 1.25rem);
     /* 142.857% */
     padding-top: 0;
+    padding-left: 1.25rem;
 }
 
 .nlen--nav-pane {
