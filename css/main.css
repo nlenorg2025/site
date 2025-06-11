@@ -1592,6 +1592,7 @@ Preheader
     background: #4C0E0A;
     position: relative;
     width: 19.25rem;
+    height: unset;
 }
 
 #nlen--preheader-search-dropdown-container::before {
@@ -1931,7 +1932,7 @@ Preheader
 
         /* Text xl/Semibold */
         font-family: var(--Font-family-font-family-body, Onest);
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: var(--Line-height-text-xl, 1.5);
@@ -1961,11 +1962,11 @@ Preheader
         gap: var(--spacing-md, 0.5rem);
         flex-shrink: 0;
         align-self: stretch;
-        border: 2px solid var(--Gradient-skeuemorphic-gradient-border, rgba(255, 255, 255, 0.12));
-        background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #6B140E);
+        border: 2px solid var(--Gradient-skeuemorphic-gradient-border, rgba(255, 255, 255, 0.12)) !important;
+        background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #6B140E) !important;
         /* Shadows/shadow-xs-skeuomorphic */
-        box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
-        color: var(--Component-colors-Components-Buttons-Primary-button-primary-fg, #FFF);
+        box-shadow: 0px 0px 0px 1px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner-border, rgba(10, 13, 18, 0.18)) inset, 0px -2px 0px 0px var(--Colors-Effects-Shadows-shadow-skeumorphic-inner, rgba(10, 13, 18, 0.05)) inset, 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05)) !important;
+        color: var(--Component-colors-Components-Buttons-Primary-button-primary-fg, #FFF) !important;
 
         /* Text xl/Semibold */
         font-family: var(--Font-family-font-family-body, Onest);
