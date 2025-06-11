@@ -71,7 +71,7 @@ figure {
     width: 100%;
     max-width: var(--container-max-width-desktop, 90rem);
     padding: 0rem var(--container-padding-desktop, 4rem);
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-self: stretch;
     margin: auto;
