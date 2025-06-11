@@ -1469,12 +1469,14 @@
         <div class="nlen--dialog-container">
             <figure>
                 <div class="profile-picture">
-                    <img src="">
+                    <img src="./img/about-us--leadership/board-of-directors/Michael A McAfee.jpg">
                 </div>
                 <figcaption>
-                    <h2></h2>
-                    <p></p>
-                    <p></p>
+                    <h2>Dr. Michael A. McAfee<span class="position">President & CEO, PolicyLink</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Malesuada lectus nunc vitae est. Interdum quis urna eget
+                        mauris ornare facilisi quis. Hac sapien elementum in aliquam. Donec dui at sagittis condimentum
+                        at. Lorem ipsum dolor sit amet consectetur. Malesuada lectus nunc vitae est. Interdum quis urna
+                        eget mauris ornare facilisi quis. </p>
                 </figcaption>
             </figure>
             <button id="dialog--close">
@@ -1494,6 +1496,11 @@
         window.addEventListener('load', function () {
 
             dialog = document.querySelector('#nlen--dialog');
+
+            dialog.addEventListener('cancel', (ev, target) => {
+                dialog.classList.remove('show');
+            })
+
             showDialogLinks = document.querySelectorAll('.show-modal');
             showDialogLinks.forEach((el, idx) => {
                 el.addEventListener('click', function (ev, target) {
