@@ -12,7 +12,7 @@
     .nlen--container {
         display: flex;
         max-width: var(--container-max-width-desktop, 90rem);
-        padding: 0rem 10.875rem 0rem var(--container-padding-desktop, 2rem);
+        padding: 0rem 10.875rem 0rem var(--container-padding-desktop, 4rem);
         align-items: flex-start;
         gap: 14.75rem;
         align-self: stretch;

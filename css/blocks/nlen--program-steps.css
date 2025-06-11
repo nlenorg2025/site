@@ -1,7 +1,7 @@
 .nlen--program-steps {
     .nlen--container {
         display: flex;
-        padding: 4.9375rem 0;
+        padding: 4.9375rem 4rem;
         gap: var(--spacing-7xl, 4rem);
         flex-shrink: 0;
         align-self: stretch;
