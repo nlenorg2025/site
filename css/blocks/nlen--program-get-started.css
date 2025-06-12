@@ -1,6 +1,5 @@
 .nlen--program-get-started {
     display: flex;
-    height: 22.4375rem;
     padding: var(--spacing-9xl, 6rem) 0rem;
     flex-direction: column;
     align-items: center;

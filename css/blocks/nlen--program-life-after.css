@@ -1,12 +1,8 @@
-.nlen--program-life-after {
+.nlen--program-get-started.nlen--program-life-after {
     padding: var(--spacing-9xl, 6rem) 0rem;
 
-    .heading-and-supporting-text {
-        width: 26.2rem;
+    .nlen--container {
+        gap: 7rem;
     }
 
-    .content {
-        width: 30rem;
-    }
-    
 }
