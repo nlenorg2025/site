@@ -2979,6 +2979,10 @@ Alumni sucess
             >p {
                 width: 100%;
             }
+
+            a[class*="button"] {
+                margin: auto;
+            }
         }
 
     }
