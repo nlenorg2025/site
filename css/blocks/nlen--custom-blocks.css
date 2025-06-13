@@ -4433,3 +4433,25 @@ Thanks
     width: 100%;
     height: 100%;
 }
+
+#request-for-providers {
+    background: linear-gradient(92deg, #FFF7ED 26.84%, rgba(255, 255, 255, 0.00) 98.64%), url(../../img/about-us--our-campus--events-meeting-spaces/request-for-vendors.jpg) no-repeat center;
+    background-size: cover;
+
+    .nlen--container {
+        h2 {
+            max-width: 46.74344rem;
+            flex-shrink: 0;
+            color: var(--NLEN-maroon, #6B140E);
+
+            /* Display sm/Semibold */
+            font-family: var(--Font-family-font-family-display, Onest);
+            font-size: var(--Font-size-display-sm, 1.875rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--Line-height-display-sm, 2.375rem);
+            /* 126.667% */
+        }
+    }
+
+}
