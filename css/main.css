@@ -2120,6 +2120,10 @@ Preheader
     align-self: stretch;
     border-top: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
     background: var(--Colors-Background-bg-secondary, #FAFAFA);
+
+    a[class*="button"] {
+        margin: auto;
+    }
 }
 
 
@@ -3169,6 +3173,10 @@ Alumni sucess
         align-self: stretch;
         border-top: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
         background: var(--Colors-Background-bg-secondary, #FAFAFA);
+
+        a[class*="button"] {
+            margin: auto;
+        }
     }
 }
 
