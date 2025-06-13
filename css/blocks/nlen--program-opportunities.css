@@ -1,5 +1,5 @@
 .nlen--program-opportunities {
-    
+
     .nlen--container {
         display: flex;
         padding: 4.9375rem 4rem;
@@ -39,6 +39,18 @@
             gap: var(--spacing-7xl, 4rem);
             flex: 0 0 auto;
             align-self: stretch;
+
+            p {
+                align-self: stretch;
+                position: relative;
+                color: var(--colors-text-text-tertiary-600, #535862);
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 400;
+                padding-left: 2.75rem;
+                line-height: 1.75rem;
+            }
 
             ul {
                 display: flex;
