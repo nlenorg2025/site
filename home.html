@@ -374,7 +374,8 @@
                                                 style="display: block; height: 100%; object-fit: contain;">
                                         </picture>
                                         <h1>A vibrant community</h1>
-                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce campus is
+                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s
+                                            vibrant workforce campus is
                                             home to the award-winning beelove café—where community, opportunity, and
                                             handcrafted hospitality meet.</p>
                                     </article>
@@ -791,16 +792,17 @@
 
                 </dl>
                 <footer>
-                                    <article class="nav-content-video">
-                                        <picture>
-                                            <img src="./img/about-us--campus-community.png"
-                                                style="display: block; height: 100%; object-fit: contain;">
-                                        </picture>
-                                        <h1>A vibrant community</h1>
-                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce campus is
-                                            home to the award-winning beelove café—where community, opportunity, and
-                                            handcrafted hospitality meet.</p>
-                                    </article>
+                    <article class="nav-content-video">
+                        <picture>
+                            <img src="./img/about-us--campus-community.png"
+                                style="display: block; height: 100%; object-fit: contain;">
+                        </picture>
+                        <h1>A vibrant community</h1>
+                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce
+                            campus is
+                            home to the award-winning beelove café—where community, opportunity, and
+                            handcrafted hospitality meet.</p>
+                    </article>
                 </footer>
             </nav>
         </div>
@@ -1054,36 +1056,36 @@
                             var selectedInterest = userInterestSelect.options[userInterestSelect.selectedIndex].value;
                             if (selectedRole === 'returning-citizen') {
                                 switch (selectedInterest) {
-                                    case 'training': destinationURL = 'https://www.nlen.org/u-turn'; break;
-                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'training': destinationURL = './program--uturn.html'; break;
+                                    case 'financial-education': destinationURL = './services--financial-readiness.html'; break;
+                                    case 'income-support': destinationURL = './services--financial-readiness.html'; break;
                                     case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'food-security': destinationURL = './services--financial-readiness.html'; break;
                                     default: break;
                                 }
                             }
                             if (selectedRole === 'young-adult') {
                                 switch (selectedInterest) {
-                                    case 'training': destinationURL = 'https://www.nlen.org/craft-your-path'; break;
-                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'training': destinationURL = './program--craft-your-path.html'; break;
+                                    case 'financial-education': destinationURL = './services--financial-readiness.html'; break;
+                                    case 'income-support': destinationURL = './services--financial-readiness.html'; break;
                                     case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'food-security': destinationURL = './services--financial-readiness.html'; break;
                                     default: break;
                                 }
                             }
                             if (selectedRole === 'job-seeker') {
                                 switch (selectedInterest) {
                                     case 'training': destinationURL = './programs-overview.html'; break;
-                                    case 'financial-education': destinationURL = 'https://www.nlen.org/foc'; break;
-                                    case 'income-support': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'financial-education': destinationURL = './services--financial-readiness.html'; break;
+                                    case 'income-support': destinationURL = './services--financial-readiness.html'; break;
                                     case 'utility-assistance': destinationURL = 'https://www.nlen.org/liheap'; break;
-                                    case 'food-security': destinationURL = 'https://www.nlen.org/foc'; break;
+                                    case 'food-security': destinationURL = './services--financial-readiness.html'; break;
                                     default: break;
                                 }
                             }
                             if (selectedRole === 'employer') {
-                                destinationURL = 'https://www.nlen.org/partnerships';
+                                destinationURL = './our-network--employers.html';
                             }
                             if (destinationURL !== false) {
                                 window.location.href = destinationURL;
@@ -1131,7 +1133,7 @@
                     </ul>
                 </main>
                 <footer>
-                    <a href="https://www.nlen.org/partnerships" class="nlen--secondary-button">
+                    <a href="./our-network--employers.html" class="nlen--secondary-button">
                         <span class="has-arrow black">Partner with us</span>
                     </a>
                 </footer>
@@ -1151,7 +1153,7 @@
                     </ul>
                 </main>
                 <footer>
-                    <a href="https://www.nlen.org/sign-up-to-learn-more" class="nlen--secondary-button">
+                    <a href="./get-involved--join-us.html" class="nlen--secondary-button">
                         <span class="has-arrow black">Get involved</span>
                     </a>
                 </footer>
@@ -1173,7 +1175,7 @@
                 </p>
             </main>
             <footer>
-                <a class="nlen--primary-button" href="https://www.nlen.org/who-we-are">
+                <a class="nlen--primary-button" href="./about-us--mission-impact.html">
                     <span class="has-arrow">Learn more</span>
                 </a>
             </footer>
@@ -1336,7 +1338,7 @@
                     hope, one person at a time".</p>
                 <!-- toolbar -->
                 <p>
-                    <a href="#!" class="nlen--secondary-button" style="width: 15.3rem;">
+                    <a href="./about-us--press-media.html" class="nlen--secondary-button" style="width: 15.3rem;">
                         <span class="has-arrow black">More news</span>
                     </a>
                 </p>
@@ -1796,6 +1798,59 @@
             </p>
         </div>
     </section>
+    <!-- video modal -->
+    <dialog id="nlen--dialog" class="has-video-content">
+        <div class="nlen--dialog-container">
+            <div data-vjs-player>
+                <video id="vid1" class="video-js">
+                    <source src="//vjs.zencdn.net/v/oceans.mp4">
+                </video>
+            </div>
+            <button id="dialog--close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path
+                        d="M25 15L15 25M15 15L25 25M36.6667 20C36.6667 29.2048 29.2048 36.6667 20 36.6667C10.7953 36.6667 3.33337 29.2048 3.33337 20C3.33337 10.7953 10.7953 3.33334 20 3.33334C29.2048 3.33334 36.6667 10.7953 36.6667 20Z"
+                        stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </dialog>
+    <script type="text/javascript">
+        var dialog;
+        var showDialogLinks;
+        var closeDialog;
+        var player;
+
+        window.addEventListener('load', function () {
+
+            dialog = document.querySelector('#nlen--dialog');
+
+            dialog.addEventListener('cancel', (ev, target) => {
+                dialog.classList.remove('show');
+                player.dispose();
+            })
+
+            showDialogLinks = document.querySelectorAll('.show-video');
+            showDialogLinks.forEach((el, idx) => {
+                el.addEventListener('click', function (ev, target) {
+                    ev.preventDefault();
+                    var videoUrl = el.dataset.videoUrl;
+                    console.log(videoUrl);
+                    dialog.showModal();
+                    dialog.classList.add('show');
+                    player = videojs('vid1', { restoreEl: true, playsinline: true, controls: true, autoplay: true, aspectRatio: "16:9", techOrder: ["youtube"], sources: [{ type: "video/youtube", src: videoUrl }] });
+                    player.volume(0.75);
+                })
+            })
+
+            closeDialog = document.querySelector("#dialog--close");
+            closeDialog.addEventListener("click", () => {
+                dialog.close();
+                dialog.classList.remove('show');
+                player.dispose();
+            });
+        });
+    </script>
 </body>
 
 </html>
