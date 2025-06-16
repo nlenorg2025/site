@@ -267,10 +267,8 @@
                                             <img src="./img/nlen--looking-for-clients.webp"
                                                 style="display: block; height: 100%; object-fit: contain;">
                                         </picture>
-                                        <h1>Hiring NLEN Graduates</h1>
-                                        <p>We are here to support recruitment, screening and hiring needs, as well as
-                                            provide constructive performance feedback to our clients while they are
-                                            working for our employer partners.</p>
+                                        <h1>Hire Talent. Transform Lives.</h1>
+                                        <p>When you hire an NLEN graduate, you’re gaining a  trained, motivated professional—and investing in a  stronger, more equitable Chicago.</p>
                                         <p><a class="nlen--nav-link-2" href="./our-network--employers.html">LEARN
                                                 MORE<span class="has-arrow wine"></span></a></p>
                                     </article>
@@ -376,7 +374,8 @@
                                                 style="display: block; height: 100%; object-fit: contain;">
                                         </picture>
                                         <h1>A vibrant community</h1>
-                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce campus is
+                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s
+                                            vibrant workforce campus is
                                             home to the award-winning beelove® café—where community, opportunity, and
                                             handcrafted hospitality meet.</p>
                                     </article>
@@ -706,7 +705,7 @@
                             <img src="./img/nlen--looking-for-clients.webp"
                                 style="display: block; height: 100%; object-fit: contain;">
                         </picture>
-                        <h1>Hiring NLEN Graduates</h1>
+                        <h1>Hire Talent. Transform Lives.</h1>
                         <p>We are here to support recruitment, screening and hiring needs, as well as
                             provide constructive performance feedback to our clients while they are
                             working for our employer partners.</p>
@@ -793,16 +792,17 @@
 
                 </dl>
                 <footer>
-                                    <article class="nav-content-video">
-                                        <picture>
-                                            <img src="./img/about-us--campus-community.png"
-                                                style="display: block; height: 100%; object-fit: contain;">
-                                        </picture>
-                                        <h1>A vibrant community</h1>
-                                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce campus is
-                                            home to the award-winning beelove® café—where community, opportunity, and
-                                            handcrafted hospitality meet.</p>
-                                    </article>
+                    <article class="nav-content-video">
+                        <picture>
+                            <img src="./img/about-us--campus-community.png"
+                                style="display: block; height: 100%; object-fit: contain;">
+                        </picture>
+                        <h1>A vibrant community</h1>
+                        <p style="font-weight: 400;">Located in the heart of North Lawndale, NLEN’s vibrant workforce
+                            campus is
+                            home to the award-winning beelove® café—where community, opportunity, and
+                            handcrafted hospitality meet.</p>
+                    </article>
                 </footer>
             </nav>
         </div>
@@ -1146,7 +1146,9 @@
                                     <img
                                         src="./img/about-us--leadership/ELT/Palms_Brenda_228-0314-Retouched-3_executive.jpg">
                                 </picture>
-                                <p class="nlen--team-member-name"><strong>Brenda M. Palms</strong></p>
+                                <p class="nlen--team-member-name"><strong>Brenda M. Palms</strong><a class="show-modal"
+                                        href="./about-us--leadership--brenda.html">bio</a></p>
+                                </p>
                                 <p class="nlen--team-member-position">President & CEO</p>
                             </li>
                             <!-- -->
@@ -1164,7 +1166,9 @@
                                 <picture>
                                     <img src="./img/about-us--leadership/ELT/Khelan Todd-Retouched22_executive.jpg">
                                 </picture>
-                                <p class="nlen--team-member-name"><strong>Khelan Todd</strong></p>
+                                <p class="nlen--team-member-name"><strong>Khelan Todd</strong><a
+                                        href="./about-us--leadership--khelan.html" class="show-modal">bio</a></p>
+                                </p>
                                 <p class="nlen--team-member-position">Chief Impact & Innovation Officer</p>
                             </li>
                             <!-- -->
@@ -1309,7 +1313,7 @@
         <style>
             @import url(./css/blocks/nlen--team.css);
         </style>
-        <!-- Team group picture -->
+        <!-- Board of directors group picture -->
         <section class="nlen--group-picture">
             <div class="nlen--container">
                 <h2>Leading with Purpose and Mission</h2>
@@ -1328,7 +1332,7 @@
         <style>
             @import url(./css/blocks/nlen--team-group-picture.css);
         </style>
-        <!-- Team group picture -->
+        <!-- Associate board group picture -->
         <section class="nlen--group-picture">
             <div class="nlen--container">
                 <h2>Building Stronger Communities</h2>
@@ -1505,7 +1509,7 @@
                 dialog.classList.remove('show');
             })
 
-            showDialogLinks = document.querySelectorAll('.show-modal');
+            showDialogLinks = document.querySelectorAll('.show-modal:not([href=""])');
             showDialogLinks.forEach((el, idx) => {
                 el.addEventListener('click', function (ev, target) {
                     ev.preventDefault();

@@ -22,6 +22,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Onest', Arial, Helvetica, sans-serif;
     text-rendering: geometricPrecision;
@@ -1544,7 +1549,7 @@ Preheader
 }
 
 #nlen--preheader-badge {
-    width: 20rem;
+    width: fit-content;
     display: flex;
     padding: var(--spacing-xs, 0.25rem) 0.625rem var(--spacing-xs, 0.25rem) var(--spacing-xs, 0.25rem);
     align-items: center;
@@ -2353,7 +2358,6 @@ Alumni sucess
         gap: var(--spacing-7xl, 4rem);
         align-self: stretch;
         height: 40.8rem;
-        overflow: hidden;
 
         >div {
             height: 100%;
@@ -2366,6 +2370,8 @@ Alumni sucess
             /* Shadows/shadow-xl */
             box-shadow: 0px 20px 24px -4px var(--Colors-Effects-Shadows-shadow-xl_01, rgba(10, 13, 18, 0.08)), 0px 8px 8px -4px var(--Colors-Effects-Shadows-shadow-xl_02, rgba(10, 13, 18, 0.03)), 0px 3px 3px -1.5px var(--Colors-Effects-Shadows-shadow-xl_03, rgba(10, 13, 18, 0.04));
             background-color: #ffffff;
+            overflow: hidden;
+
         }
     }
 
@@ -2414,14 +2420,18 @@ Alumni sucess
         flex-shrink: 0;
         width: 50%;
 
-        .splide__arrow--prev {
-            bottom: 3rem;
-            top: unset;
-        }
+        .splide__pagination {
+            justify-content: left;
+            bottom: 1rem;
+            left: 1rem;
 
-        .splide__arrow--next {
-            bottom: 3rem;
-            top: unset;
+            .splide__pagination__page {
+                background: #fff;
+            }
+
+            .splide__pagination__page.is-active {
+                background: #222222;
+            }
         }
 
     }
@@ -3355,6 +3365,30 @@ Alumni sucess
 
     }
 
+
+    .img-holder {
+        width: 38rem;
+        height: calc(38rem * 9 / 16);
+        background-color: #33333333;
+        position: relative;
+        overflow: hidden;
+
+        &>img {
+            width: 120%;
+            height: auto;
+            object-fit: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .show-video {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+    }
 
     .alumni-sucess-story {
         display: flex;
