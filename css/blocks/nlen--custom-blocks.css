@@ -3846,8 +3846,8 @@ Heading
 
 #get-involved--annual-gala--heading {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(../..//img/get-involved--events--annual-gala/annual-gala--heading-image.jpg) lightgray 1.529px -58.518px / 100% 149.032% no-repeat;
-    background-size: contain;
-    min-height: 46rem;
+    background-size: cover;
+    height: 46rem;
     background-position: center;
 
     .nlen--container {}
