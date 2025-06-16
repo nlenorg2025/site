@@ -4455,3 +4455,25 @@ Thanks
     }
 
 }
+
+/**/
+
+.about-us--leadership-bio {
+    padding-bottom: 10rem;
+
+    .nlen--container {
+        max-width: 65rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-self: stretch;
+        gap: 3rem;
+    }
+
+    .content {}
+}
