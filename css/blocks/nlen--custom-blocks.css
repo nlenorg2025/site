@@ -245,14 +245,15 @@
     .nlen--container {
         h2 {
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 2.75rem;
         }
 
         p {
-            font-weight: 600 !important;
-            letter-spacing: 0%;
+            font-weight: 500 !important;
+            letter-spacing: 0;
             text-align: center;
-
+            font-size: 1.5rem !important;
+            line-height: 1.5;
         }
     }
 
@@ -425,8 +426,8 @@ Graduates
 
             p:has([class*="button"]) {
                 position: absolute;
-                right: 0;
-                bottom: 0;
+                right: 4rem;
+                bottom: 0rem;
             }
         }
     }
@@ -4476,4 +4477,16 @@ Thanks
     }
 
     .content {}
+}
+
+
+/**/
+
+#our-network--graduates--heading {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(../..//img/our-network--graduates/nlen--graduates--header-img.jpg) lightgray 1.529px -58.518px / 100% 149.032% no-repeat;
+    background-size: cover;
+    height: 38rem;
+    background-position: center;
+
+    .nlen--container {}
 }
