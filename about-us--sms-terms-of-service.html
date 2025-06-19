@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NLEN.ORG --- LEADERSHIP</title>
+    <title>NLEN.ORG --- About Us / Our Campus</title>
     <meta charset="utf-8">
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="./vendor/hamburger.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/blocks/nlen--custom-blocks.css">
-
+    <style>
+        @import url(./css/blocks/nlen--custom-blocks.css);
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
@@ -965,9 +966,9 @@
         })
 
     </script>
-    <!-- program contents -->
-    <main class="nlen--main nlen--about-team-elt">
-        <section class="nlen--heading-inner">
+    <!-- insert header here -->
+    <main class="nlen--main get-involved--contact-us">
+        <section class="nlen--heading-inner" id="get-involved--contact-us-heading">
             <div class="nlen--container">
                 <nav class="nlen--breadcrumbs">
                     <p><a href="/"><span
@@ -977,452 +978,114 @@
                                     fill="none">
                                     <path
                                         d="M6.66667 14.1668H13.3333M9.18141 2.30345L3.52949 6.69939C3.15168 6.99324 2.96278 7.14017 2.82669 7.32417C2.70614 7.48716 2.61633 7.67078 2.56169 7.866C2.5 8.08639 2.5 8.3257 2.5 8.80433V14.8334C2.5 15.7669 2.5 16.2336 2.68166 16.5901C2.84144 16.9037 3.09641 17.1587 3.41002 17.3185C3.76654 17.5001 4.23325 17.5001 5.16667 17.5001H14.8333C15.7668 17.5001 16.2335 17.5001 16.59 17.3185C16.9036 17.1587 17.1586 16.9037 17.3183 16.5901C17.5 16.2336 17.5 15.7669 17.5 14.8334V8.80433C17.5 8.3257 17.5 8.08639 17.4383 7.866C17.3837 7.67078 17.2939 7.48716 17.1733 7.32417C17.0372 7.14017 16.8483 6.99324 16.4705 6.69939L10.8186 2.30345C10.5258 2.07574 10.3794 1.96189 10.2178 1.91812C10.0752 1.87951 9.92484 1.87951 9.78221 1.91812C9.62057 1.96189 9.47418 2.07574 9.18141 2.30345Z"
-                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke="#FF4B00" stroke-width="1.66667" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                             </b>
                         </a>
-                        <span class="chevron-right"></span> <a href="#">About Us</a> <span class="chevron-right"></span>
-                        <a href="#" class="active-link">Leadership</a>
+                        <span class="chevron-right orange"></span> <a href="#">About Us</a> <span
+                            class="chevron-right orange"></span>
+                        <a href="#" class="active-link">Text Messaging Terms of Service</a>
                     </p>
                 </nav>
-                <div class="heading--container">
-                    <div class="contents">
-                        <div class="title">
-                            <h1>Meet Our Leaders</h1>
-                        </div>
-                        <div class="supporting-text">
-                            <p>Together, our Board of Directors, Executive Leadership Team, and Associate Board work to
-                                help NLEN imagine and execute its goals for North Lawndale, and beyond. We are proud to
-                                have such incredible leaders guiding the way for our programs, our purpose, and our
-                                shared passion for our graduates.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <style>
             @import url(./css/blocks/nlen--heading-inner.css);
+
+            #get-involved--contact-us-heading {
+                height: auto;
+                background-color: #ffffff;
+
+                a {
+                    color: var(--NLEN--RedOrange, #FF4B00);
+                }
+
+                .nlen--container {
+                    .nlen--breadcrumbs {
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
         </style>
-        <!--  -->
-        <section class="nlen--team">
+        <!-- program description -->
+        <section id="get-involved--contact-information">
             <div class="nlen--container">
-                <div class="nlen--team-tabs-panes">
-
-                    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                    <label for="tab1">Board of Directors</label>
-
-                    <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                    <label for="tab2">Executive Leadership Team</label>
-
-                    <input type="radio" id="tab3" name="tabGroup1" class="tab">
-                    <label for="tab3">Associate Board</label>
-                    <!-- -->
-                    <div class="nlen--team-tab-pane tab__content">
-                        <h3>
-                            Board of Directors
-                        </h3>
-                        <p>
-                            Our Board of Directors represents some of the most influential leaders in Chicago and
-                            beyond, working together to create positive change in North Lawndale and spread NLEN’s
-                            mission far and wide.
-                        </p>
-                        <ul class="nlen--team-grid">
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Michael A McAfee.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Dr. Michael A. McAfee</strong><a
-                                        class="show-modal">bio</a></p>
-                                <p class="nlen--team-member-position">President & CEO</p>
-                                <p class="nlen--team-member-company">PolicyLink</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Sarah M Bernstein.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Sarah M. Bernstein</strong></p>
-                                <p class="nlen--team-member-position">Partner</p>
-                                <p class="nlen--team-member-company">Barack Ferrazzano Kirschbaum & Nagelberg LLP</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Greg Faulkner.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Greg Faulkner</strong></p>
-                                <p class="nlen--team-member-position">Vice President of Business Development</p>
-                                <p class="nlen--team-member-company">Trice Construction Company</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Michael Kramer.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Michael Kramer</strong></p>
-                                <p class="nlen--team-member-position">CFO of Corporate Functions</p>
-                                <p class="nlen--team-member-company">Boeing (retired)</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Daniel O Ash.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Daniel O. Ash</strong></p>
-                                <p class="nlen--team-member-position">President</p>
-                                <p class="nlen--team-member-company">The Field Foundation of Illinois</p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Elayne Granger.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Elayne Granger</strong></p>
-                                <p class="nlen--team-member-position">Director of External & Legislative Affairs</p>
-                                <p class="nlen--team-member-company">AT&T (retired)</p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Tiana Conley.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Tiana Conley</strong></p>
-                                <p class="nlen--team-member-position">VP, Global Portfolio Strategy</p>
-                                <p class="nlen--team-member-company">Mars Wrigley</p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Winnie Kearns.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Winnie Kearns</strong></p>
-                                <p class="nlen--team-member-position">Upper School Counsellor</p>
-                                <p class="nlen--team-member-company">Francis Parker School</p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Tyler Clark.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Tyler Clark</strong></p>
-                                <p class="nlen--team-member-position">State & Local Government Affairs</p>
-                                <p class="nlen--team-member-company">Microsoft</p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/board-of-directors/Laurie Glenn.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Laurie Glenn</strong></p>
-                                <p class="nlen--team-member-position">President & CEO</p>
-                                <p class="nlen--team-member-company">ThinkInc</p>
-
-                            </li>
-                        </ul>
+                <div class="contact-information">
+                    <div class="heading">
+                        <h1>
+                            Text Messaging Terms of Service
+                        </h1>
                     </div>
-                    <!-- -->
-                    <div class="nlen--team-tab-pane tab__content">
-                        <h3>
-                            Executive Leadership Team
-                        </h3>
-                        <p>
-                            Our Executive Leadership Team includes founding members of NLEN, who have always believed
-                            that when given a fair chance, incredible things can happen.
-                        </p>
-                        <ul class="nlen--team-grid">
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img
-                                        src="./img/about-us--leadership/ELT/Palms_Brenda_228-0314-Retouched-3_executive.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Brenda M. Palms</strong><a class="show-modal"
-                                        href="./about-us--leadership--brenda.html">bio</a></p>
-                                </p>
-                                <p class="nlen--team-member-position">President & CEO</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img
-                                        src="./img/about-us--leadership/ELT/Butler_Jessica_049-Retouched_executive.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Jessica N. Butler</strong><span>, MNM, CFRE,
-                                        CAP®</span></p>
-                                <p class="nlen--team-member-position">Chief Development & External Relations Officer</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/ELT/Khelan Todd-Retouched22_executive.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>Khelan Todd</strong><a
-                                        href="./about-us--leadership--khelan.html" class="show-modal">bio</a></p>
-                                </p>
-                                <p class="nlen--team-member-position">Chief Impact & Innovation Officer</p>
-                            </li>
-                            <!-- -->
-                        </ul>
-                    </div>
-
-                    <!-- -->
-                    <div class="nlen--team-tab-pane tab__content">
-                        <h3>
-                            Associate Board
-                        </h3>
-                        <p>
-                            Our Associate Board provides emerging leaders and change agents the opportunity to develop
-                            their skills in nonprofit leadership and governance while working to advance our mission,
-                            and build capacity for our organization and social enterprises.
-                        </p>
-                        <ul class="nlen--team-grid">
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Elliot Ding.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-                                        Elliot Ding
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Federal Health Consultant
-                                </p>
-                                <p class="nlen--team-member-company">Deloitte</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Gina Ragland.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Gina Ragland
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Assistant Director, Volunteer Operations
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    University of Illinois Chicago
-                                </p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img
-                                        src="./img/about-us--leadership/asociate-board/Butler_Jessica_049-Retouched_associates.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Jessica N. Butler
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Chief Development and External Relations Officer
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    North Lawndale Employment Network
-                                </p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Vince Gomez.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Vince Gomez
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Director, Community Engagement
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    Lincoln Park Zoo
-                                </p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Kelsey Shea.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Kelsey Shea
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    VP of Social Impact & Inclusion
-                                </p>
-                                <p class="nlen--team-member-company">Golin</p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Rashaan Taylor.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Rahsaan Taylor
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Sr. Creative Lead
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    Eli Lilly
-                                </p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Paul Collins.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Paul Collins
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Metropolitan Water Reclamation District of Greater Chicago
-                                </p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Jack Manilow.png">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Jack Manilow
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    CVI Chair
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    Crown Family Philanthropies
-                                </p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Chelsea Dawkins.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Chelsea Dawkins
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Partnership Lead
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    VIVO Foundation
-                                </p>
-
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/TanekaPernellTmpImg.png">
-
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Taneka Pernell
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Program Director
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    City of Chicago
-                                </p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Kimberly Chandler.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Kimberly Chandler
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    AVP Branch Manager
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    Wintrust Bank North Lawndale
-                                </p>
-                            </li>
-                            <!-- -->
-                            <li class="nlen--team-member">
-                                <picture>
-                                    <img src="./img/about-us--leadership/asociate-board/Corin Hernandez.jpg">
-                                </picture>
-                                <p class="nlen--team-member-name"><strong>
-
-                                        Corin Hernandez
-                                    </strong></p>
-                                <p class="nlen--team-member-position">
-
-                                    Mergers & Acquisitions (M&A)
-                                </p>
-                                <p class="nlen--team-member-company">
-
-                                    Google
-                                </p>
-                            </li>
-                        </ul>
-                        <p>
-                            Our Associate Board is accepting new members. Reach out to <a
-                                href="mailto:development@nlen.org">development@nlen.org</a> and
-                            introduce yourself.
-                        </p>
+                    <div class="content">
+                        <h2>1. Program Description</h2>
+                        <p>By opting in to NLEN’s text messaging service, you agree to receive
+                        updates related to our programs, events, job opportunities, community
+                        resources, and organizational news.</p>
+                        <h2>2. Opt-Out Instructions</h2>
+                        <p>You can cancel the SMS service at any time by texting “STOP” to our
+                        number. After you send “STOP,” we will confirm your unsubscription via
+                        SMS. You will no longer receive messages from us unless you opt in again.</p>
+                        <h2>3. Help and Support</h2>
+                        <p>If you experience issues with the messaging program, reply with the
+                        keyword “HELP” for assistance. You can also contact us directly at
+                        info@nlen.org or call 773-638-1825.</p>
+                        <h2>4. Carrier Disclaimer</h2>
+                        <p>Mobile carriers are not liable for delayed or undelivered messages.</p>
+                        <h2>5. Message &amp; Data Rates</h2>
+                        <p>Message and data rates may apply for messages sent to and from NLEN.
+                        Message frequency may vary depending on your engagement with our
+                        services. For questions about your text or data plan, please contact your
+                        wireless provider.</p>
+                        <h2>6. Privacy</h2>
+                        <p>For information on how we collect, use, and protect your data, please
+                        review our privacy policy at: <a href="./about-us--privacy-terms.html">https://new.nlen.org/about-us--privacy-terms.html</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
         <style>
-            @import url(./css/blocks/nlen--team.css);
-            @import url(./css/blocks/nlen--tabs.css);
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+
+                p {
+                    line-height: 1.725;
+                }
+            }
         </style>
-        <!-- Leadership CTA -->
-        <section class="nlen--leadership-cta">
+        <!-- keep in touch -->
+        <section id="nlen--keep">
             <div class="nlen--container">
-                <h2>Get Involved</h2>
-                <p>Become a part of the NLEN community. Advocate for social justice in North Lawndale and beyond.</p>
-                <p><a class="nlen--primary-button" href="./get-involved--advocacy.html">
-                        <span class="has-arrow white">
-                            Advocacy at NLEN
-                        </span>
-                    </a></p>
+                <h1>Keep in touch</h1>
+                <p>Sign up today to receive program info and emails from NLEN.</p>
+                <form id="subscription-form">
+                    <p>
+                        <input type="email" placeholder="Enter your email" id="subs-form-email" name="email">
+                        <button type="submit" id="subs-form-submit" class="nlen--primary-button"><span
+                                class="has-arrow">Subscribe</span></button>
+                    </p>
+                </form>
             </div>
         </section>
-        <style>
-            @import url(./css/blocks/nlen--leadership-cta.css);
-        </style>
+        <script type="text/javascript">
+
+            var subscriptionForm;
+            var apiURL = 'https://script.google.com/macros/s/AKfycbyVs5tNh-zw6ztDkpd1_N3gEGwZ4KsYaU9y2Z9GqWX74dmowl-VIEe9GyPvKRiXMzMX/exec';
+
+            document.addEventListener('DOMContentLoaded', function () {
+
+                subscriptionForm = document.querySelector('#subscription-form');
+
+                subscriptionForm.addEventListener('submit', function (ev) {
+                    ev.preventDefault();
+                })
+
+            })
+
+        </script>
     </main>
     <!-- footer -->
     <footer class="nlen--site-footer">
@@ -1478,8 +1141,7 @@
     <section class="nlen--site-postfooter">
         <div class="nlen--container">
             <p>
-                ©2025 NLEN All rights reserved. | <a href="./about-us--privacy-terms.html">Privacy Policy</a> | <a
-                    href="./about-us--sms-terms-of-service.html">SMS Terms of Service </a> |
+                ©2025 NLEN All rights reserved. | <a href="./about-us--privacy-terms.html">Privacy Policy</a> | <a href="./about-us--sms-terms-of-service.html">SMS Terms of Service </a> |
                 EIN: 36-4295189
             </p>
             <p class="nlen--site-postfooter-links">
@@ -1535,6 +1197,9 @@
             </p>
         </div>
     </section>
+    <style>
+        @import url(./css/blocks/nlen--custom-blocks.css);
+    </style>
 </body>
 
 </html>

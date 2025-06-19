@@ -1305,7 +1305,7 @@ Logos
     font-family: var(--Font-family-font-family-body, Onest);
     font-size: var(--Font-size-text-sm, 0.875rem);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.5rem;
     /* 57.143% */
 }
