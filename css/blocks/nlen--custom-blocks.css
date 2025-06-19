@@ -2605,7 +2605,7 @@ Graduates
 
     .nlen--container {
         display: flex;
-        padding: 7rem 0;
+        padding: 7rem  4rem;
         flex-direction: column;
         align-items: center;
         gap: 7rem;
@@ -2615,6 +2615,9 @@ Graduates
         }
 
         .sponsors-donors-list {
+            width: 72rem;
+            margin: auto;
+
             h2 {
                 color: var(--NLEN--RedOrange, #FF4B00);
                 text-align: center;
@@ -2637,7 +2640,9 @@ Graduates
                 flex: 0 0 auto;
                 column-gap: 3rem;
                 row-gap: 2rem;
-                justify-content: center;
+                justify-content: flex-start;
+                padding: 0;
+                margin: auto;
 
                 li {
                     display: flex;
@@ -2648,6 +2653,14 @@ Graduates
                     background-color: #ffffff;
                     justify-content: center;
                     align-items: center;
+
+                    span {
+                        font-size: 0.725rem;
+                        text-align: center;
+                        padding: 1rem;
+                        color: #33333333;
+                    }
+
                 }
 
                 li.spacer {

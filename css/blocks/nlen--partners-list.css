@@ -25,22 +25,74 @@
         }
 
         .nlen--partners-list--logos {
-            max-width: 70.5rem;
+            width: 70.5rem;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             column-gap: 3rem;
             row-gap: 2rem;
             flex: 0 0 auto;
             flex-wrap: wrap;
+
+            details {
+                align-self: stretch;
+                display: flex;
+                flex-direction: row;
+                padding-top: 4rem;
+                position: relative;
+
+                summary {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 1rem 2rem;
+                    overflow: hidden;
+                    height: 3rem;
+                    cursor: pointer;
+
+                    color: #fff;
+                    text-align: center;
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: var(--Font-size-display-md, 1.75rem);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: var(--Line-height-display-md, 1.5);
+                    letter-spacing: -0.045rem;
+                    background-color: #FF4B00;
+                }
+
+                .items {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap: 3rem;
+                    row-gap: 2rem;
+                }
+
+            }
 
             picture {
                 width: 15.375rem;
                 height: 8.5rem;
                 flex-shrink: 0;
                 background: #FFF;
-                display: block;
+                display: flex;
                 flex-basis: auto;
                 position: relative;
+                justify-content: center;
+                align-items: center;
+                user-select: none;
+                pointer-events: none;
+
+                span {
+                    font-size: 0.725rem;
+                    color: #33333333;
+                }
 
                 img {
                     width: auto;

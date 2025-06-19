@@ -3712,6 +3712,7 @@ ul.other-ways-list {
     flex-wrap: wrap;
     gap: 3.25rem;
     padding: var(--spacing-8xl, 5rem) 0rem;
+    justify-content: center;
 
     >li {
 
