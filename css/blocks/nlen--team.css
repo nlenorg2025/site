@@ -78,14 +78,64 @@
 
 
         .nlen--team-tabs-panes {
-            padding-top: 4.5rem;
-            padding-bottom: 4.5rem;
+            width: 100%;
+
+
+            label {
+                cursor: pointer;
+                display: inline-flex;
+                padding: 0.5rem 1rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                border: 1px solid #D5D7DA;
+                background: var(--Color-Neutral-white, #FFF);
+                flex: 0 0 auto;
+
+                color: #000;
+
+                /* Text md/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+
+                transition: 0.25s ease-in all;
+            }
+
+            .tab:checked+label,
+            label:hover {
+                border: 1px solid #FF4B00;
+                background: var(--NLEN-btnText-alt, #F9DBAF);
+                color: #000;
+
+                /* Text md/Regular */
+                font-family: var(--Font-family-font-family-body, Onest);
+                font-size: var(--Font-size-text-md, 1rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--Line-height-text-md, 1.5rem);
+                /* 150% */
+            }
+
+            label:hover {
+                background: var(--NLEN-btnText-alt, #F9DBAF33);
+
+            }
+
+            .tab:checked+label {
+                pointer-events: none;
+            }
 
             .nlen--team-tab-pane {
                 display: flex;
                 flex-direction: column;
                 align-self: stretch;
                 row-gap: 4.5rem;
+                padding-top: 4.5rem;
+                padding-bottom: 4.5rem;
 
                 h3 {
                     color: var(--colors-text-text-brand-tertiary-600, #F34B05);
@@ -169,7 +219,7 @@
                             font-weight: 600;
                             line-height: var(--Line-height-text-lg, 1.75rem);
                             /* 155.556% */
-                        
+
                             strong {
                                 font-weight: 600;
                             }
