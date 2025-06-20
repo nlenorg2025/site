@@ -696,7 +696,7 @@ MEGAMENU
         color: var(--Text-primary, #000) !important;
 
         /* Text/Small/Normal */
-        font-family: Roboto;
+        /* font-family: Roboto */;
         font-size: 0.875rem !important;
         font-style: normal !important;
         font-weight: 400 !important;
@@ -982,23 +982,6 @@ MEGAMENU
         line-height: var(--Line-height-text-sm, 1.25rem);
     }
 
-    a {
-        color: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-fg, #535862);
-
-        /* Text sm/Semibold */
-        font-family: var(--Font-family-font-family-body, Onest);
-        font-size: var(--Font-size-text-sm, 0.875rem);
-        font-style: normal;
-        font-weight: 600;
-        line-height: var(--Line-height-text-sm, 1.25rem);
-        /* 142.857% */
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-skip-ink: none;
-        text-decoration-thickness: auto;
-        text-underline-offset: auto;
-        text-underline-position: from-font;
-    }
 }
 
 
@@ -3841,7 +3824,7 @@ ul.other-ways-list {
             color: var(--Color-Brand-white, #FFF);
 
             /* Text/Small/Semi Bold */
-            font-family: Roboto;
+            /* font-family: Roboto */;
             font-size: 0.875rem;
             font-style: normal;
             font-weight: 600;
@@ -3866,7 +3849,7 @@ ul.other-ways-list {
                 color: var(--Color-Scheme-1-Text, #000);
 
                 /* Text/Regular/Normal */
-                font-family: Roboto;
+                /* font-family: Roboto */;
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 400;
@@ -3881,7 +3864,7 @@ ul.other-ways-list {
             color: var(--Color-Scheme-1-Text, #000);
 
             /* Text/Regular/Normal */
-            font-family: Roboto;
+            /* font-family: Roboto */;
             font-size: 1rem;
             font-style: normal;
             font-weight: 400;
@@ -3912,7 +3895,7 @@ ul.other-ways-list {
             text-align: center;
 
             /* Text/Small/Medium */
-            font-family: Roboto;
+            /* font-family: Roboto */;
             font-size: 0.875rem;
             font-style: normal;
             font-weight: 500;
@@ -3937,7 +3920,7 @@ ul.other-ways-list {
             color: var(--Color-Scheme-1-Text, #000);
             text-align: center;
             /* Text/Small/Medium */
-            font-family: Roboto;
+            /* font-family: Roboto */;
             font-size: 0.875rem;
             font-style: normal;
             font-weight: 500;
