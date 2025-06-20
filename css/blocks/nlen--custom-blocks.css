@@ -261,7 +261,7 @@
 
 .nlen--our-network--employers .nlen--heading-inner.with-bg-image {
     background: linear-gradient(0deg, rgba(19, 19, 19, 0.55) 0%, rgba(19, 19, 19, 0.55) 100%), url(../../img/nlen--employers/nlen--our-network--employers-heading.jpg) lightgray 50% / cover no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -2605,7 +2605,7 @@ Graduates
 
     .nlen--container {
         display: flex;
-        padding: 7rem  4rem;
+        padding: 7rem 4rem;
         flex-direction: column;
         align-items: center;
         gap: 7rem;
@@ -2633,6 +2633,37 @@ Graduates
                 margin-bottom: 4.5rem;
             }
 
+            details {
+                position: relative;
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+
+                summary {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 1rem 2rem;
+                    overflow: hidden;
+                    height: 3rem;
+                    cursor: pointer;
+                    color: #fff;
+                    text-align: center;
+                    font-family: var(--Font-family-font-family-display, Onest);
+                    font-size: var(--Font-size-display-md, 1.75rem);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: var(--Line-height-display-md, 1.5);
+                    letter-spacing: -0.045rem;
+                    background-color: #FF4B00;
+                }
+            }
+
             ul {
                 display: flex;
                 flex-direction: row;
@@ -2653,12 +2684,19 @@ Graduates
                     background-color: #ffffff;
                     justify-content: center;
                     align-items: center;
+                    position: relative;
+                    pointer-events: none;
+
 
                     span {
                         font-size: 0.725rem;
                         text-align: center;
                         padding: 1rem;
                         color: #33333333;
+                        position: absolute;
+                        bottom: -0.5rem;
+                        pointer-events: none;
+
                     }
 
                 }

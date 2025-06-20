@@ -69,6 +69,14 @@ figure {
     margin-inline-end: 0;
 }
 
+
+img[src=""] {
+    display: block !important;
+    width: 1px !important;
+    height: 1px !important;
+    background-color: transparent;
+}
+
 /**/
 
 .nlen--container {
