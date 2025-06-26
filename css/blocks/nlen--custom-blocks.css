@@ -3734,6 +3734,7 @@ Graduates
                     padding-top: 2rem;
                     justify-content: flex-start;
                     align-items: center;
+                    gap: 0.5rem;
 
                     border: 1px solid var(--Colors-Border-border-disabled_subtle, #E9EAEB);
                     background: var(--Colors-Background-bg-primary, #FFF);
