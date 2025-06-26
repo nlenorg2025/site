@@ -255,7 +255,7 @@
 
                         .nlen--team-member-company {
                             color: var(--Text-primary, #000);
-                            font-family: Inter;
+                            font-family: Onest;
                             font-size: var(--Font-size-text-md, 1rem);
                             font-style: italic;
                             font-weight: 400;

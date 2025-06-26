@@ -1390,7 +1390,7 @@ Logos
     color: var(--Text-primary, #000);
     cursor: pointer;
     /* Text md/Semibold */
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, Onest);
     font-size: var(--Font-size-text-md, 1rem);
     font-style: normal;
     font-weight: 600;
