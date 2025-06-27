@@ -388,6 +388,67 @@
             }
         }
     }
+
+
+    .nlen--heading-inner {
+        height: unset !important;
+    }
+
+    .nlen--heading-inner.with-bg-image {
+        height: unset !important;
+    }
+
+    .nlen--heading-inner {
+        .nlen--container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        & .heading--container {
+            .contents {
+                flex-direction: column !important;
+
+                .title,
+                .supporting-text {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    .nlen--breadcrumbs {
+        margin-bottom: 2rem !important;
+
+        & p {
+            a {
+                font-size: 0.8725rem !important;
+            }
+        }
+    }
+
+    .graduates--graduate--stories-cta {
+        & .nlen--container {
+            &>div {
+                p:has([class*="button"]) {
+                    position: unset !important;
+                    bottom: unset;
+                    right: unset;
+                }
+            }
+        }
+    }
+
+    .nlen--event-card {
+        width: 100%;
+    }
+
+
+    .nlen--team-elt-cta {
+        .nlen--container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 
@@ -582,5 +643,3 @@
 input[name="nlen--nav-mobile-item-2"]:checked+label+.nlen--nav-mobile-list {
     height: auto;
 }
-
-
